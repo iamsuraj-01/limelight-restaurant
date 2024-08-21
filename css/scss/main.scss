@@ -1,0 +1,556 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap");
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+/* Variables */
+$theme: #ad854d; // theme color
+$theme-secondary: #000000; // Secondary theme color
+$white: #FFFFFF; // White color
+$dark: #212529; // Dark color
+
+/* Body */
+body {
+    background-color: $dark;
+    color: $white;
+}
+
+/* Background Colors */
+.bg-theme {
+    background: $theme;
+}
+.bg-secondary-theme {
+    background: $theme-secondary;
+}
+
+/* Text Colors */
+.text-theme {
+    color: $theme;
+}
+.text-secondary-theme {
+    color: $theme-secondary;
+}
+
+/* Text Alignment */
+.text-justify {
+    text-align: justify;
+}
+
+/* Letter-Spacing Utilities */
+.ls-1 {
+    letter-spacing: 0.1rem;
+}
+
+.ls-2 {
+    letter-spacing: 0.2rem;
+}
+
+.ls-3 {
+    letter-spacing: 0.3rem;
+}
+
+.ls-4 {
+    letter-spacing: 0.4rem;
+}
+
+.ls-5 {
+    letter-spacing: 0.5rem;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+}
+
+/* Buttons */
+.btn-theme {
+    color: $white;
+    background-color: $theme;
+    border-color: $theme;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.6s ease-in-out, border-color 0.6s ease-in-out; /* Increased duration to 0.6s */
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $theme-secondary;
+        z-index: -1;
+        transition: transform 0.6s ease-in-out; /* Increased duration to 0.6s */
+        transform: translateX(-100%);
+    }
+
+    &:hover:before {
+        transform: translateX(0);
+    }
+
+    &:hover {
+        color: $white;
+        border-color: $theme;
+    }
+}
+
+.btn-square, .btn-sm-square, .btn-lg-square {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.btn-square {
+    width: 36px;
+    height: 36px;
+}
+
+.btn-sm-square {
+    width: 30px;
+    height: 30px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+.btn-transparent {
+    background: transparent;
+}
+
+/* Back To Top Button */
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 20px;
+    z-index: 99;
+}
+
+/* Spinner */
+.spinner {
+    width: 40px;
+    height: 40px;
+    background: $theme;
+    margin: 100px auto;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+/* Keyframes */
+@-webkit-keyframes sk-rotateplane {
+    0% {
+        transform: perspective(120px);
+    }
+    50% {
+        transform: perspective(120px) rotateY(180deg);
+    }
+    100% {
+        transform: perspective(120px) rotateY(180deg) rotateX(180deg);
+    }
+}
+
+@keyframes sk-rotateplane {
+    0% {
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    }
+    100% {
+        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+}
+
+/* Spinner Visibility */
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
+    z-index: 99999;
+
+    &.show {
+        transition: opacity 0.5s ease-out, visibility 0s linear 0s;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+/* Topbar */
+.navbar-custom-class {
+    height: 45px;
+}
+
+/* Section Title */
+.section-title {
+    position: relative;
+    padding-bottom: 10px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 3px;
+        background: $theme;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 2px;
+    }
+}
+
+/* Navbar */
+.navbar {
+    .navbar-brand img {
+        width: 100px;
+        height: auto;
+        max-width: 100%;
+        pointer-events: none; /* Prevents clicking to protect logo from being downloaded */
+    }
+
+    .navbar-nav {
+        .nav-link {
+            position: relative;
+            margin-left: 25px;
+            padding: 35px 0;
+            color: $white;
+            font-size: 18px;
+            font-weight: 600;
+            outline: none;
+            transition: .5s;
+
+            &:hover,
+            &.active {
+                color: $theme;
+            }
+        }
+    }
+
+    .navbar-toggler {
+        color: $theme !important;
+        border-color: $theme !important;
+    }
+
+    .dropdown-menu {
+        padding: 0; // Setting padding to 0
+        border-radius: 0;
+
+        .dropdown-item {
+            // Default styling for dropdown items
+            transition: background-color 0.3s; // Smooth transition for background color
+            border-bottom: 1px solid #d0d0d0; /* faint border bottom line */
+            text-align: center;
+            padding: 10px;
+
+            &:hover {
+                background-color: $theme; // Set background color to theme color on hover
+                color: $white; // Change text color for better readability on the background color
+            }
+        
+            &.active, &:active {
+                color: $white;
+                background-color: $theme;
+            }
+        }
+    }
+}
+
+/* Footer */
+.footer {
+
+    .footer-nav {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        .nav-link {
+            position: relative;
+            margin-left: 25px;
+            padding: 35px 0;
+            color: $white;
+            font-size: 18px;
+            font-weight: 600;
+            outline: none;
+            transition: .5s;
+
+            &:hover,
+            &.active {
+                color: $theme;
+            }
+        }
+    }
+
+    .social-icons {
+        a {
+            font-size: 20px;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: $theme;
+            }
+        }
+    }
+
+    .logo-footer {
+        max-width: 300px; // Adjust size as needed
+        height: auto;
+    }
+
+    ul {
+        padding: 0;
+        list-style: none;
+
+        li {
+            margin-bottom: 5px;
+        }
+    }
+
+    h5 {
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    p, ul {
+        margin-bottom: 0;
+    }
+}
+
+/* Landing Page Start */
+
+/* Carousel */
+.carousel {
+    .carousel-inner {
+      .carousel-item {
+        img {
+          width: 100%;
+          height: 800px; // Adjust as needed
+          object-fit: cover;
+        }
+      }
+    }
+  
+    .carousel-caption {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(9, 30, 62, 0.8); // Dark semi-transparent background
+      z-index: 1; // Ensures the caption is above other content
+        h1 {
+            font-size: 4.5rem;
+        }
+        .highlight-text{
+            font-size: 6rem;
+        }
+    }
+  
+    .carousel-control-prev,
+    .carousel-control-next {
+        // display: none;
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: rgba(0, 0, 0, 0.5); // Optional: Semi-transparent background for icons
+        }
+    }
+}
+
+/* Banner */
+.banner {
+    background-size: cover;
+    margin-bottom: 90px;
+}
+
+/* Service */
+.service-item {
+    position: relative;
+    height: 300px;
+    padding: 0 30px;
+    transition: bottom .5s, opacity .5s; // Specify properties to transition
+
+    .service-icon {
+        margin-bottom: 30px;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $theme;
+        border-radius: 2px;
+        transform: rotate(-45deg);
+
+        .text-white {
+            transform: rotate(45deg);
+        }
+    }
+
+    a.btn {
+        position: absolute;
+        width: 60px;
+        bottom: -48px;
+        left: 50%;
+        margin-left: -30px;
+        opacity: 0;
+        transition: bottom .5s, opacity .5s; // Ensure button transition matches
+    }
+
+    &:hover a.btn {
+        bottom: -24px;
+        opacity: 1;
+    }
+}
+
+/* Gallery */
+.gallery {
+    .box {
+        width: 350px;
+        overflow: hidden;
+    }
+    .slide-img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        box-sizing: border-box;
+    }
+}
+
+/* Variables */
+$theme: #ad854d; // theme color
+
+/* Text Colors */
+.text-theme {
+    color: $theme;
+}
+
+/* Testimonial Carousel */
+.testimonial-carousel {
+    .owl-dots {
+        margin-top: 15px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .owl-dot {
+        position: relative;
+        display: inline-block;
+        margin: 0 5px;
+        width: 15px;
+        height: 15px;
+        background: $theme-secondary;
+        border-radius: 2px;
+        transition: .5s;
+        &.active {
+            width: 30px;
+            background: $theme;
+        }
+    }
+    .owl-item.center {
+        position: relative;
+        z-index: 1;
+    }
+    .owl-item .testimonial-item {
+        transition: .5s;
+    }
+    .owl-item.center .testimonial-item {
+        background: $theme-secondary !important;
+        box-shadow: 0 0 5px $theme;
+        h4, .fa-star {
+            color: $theme !important; /* Set text and stars to black */
+        }
+    }
+}
+
+  
+/* Media Queries */
+
+/* Smartphones Only */
+@media (max-width: 640px) {
+    /* Navbar */
+    .navbar {
+         /* Navbar Brand */
+        .navbar-brand img {
+            width: 100px;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    /* Carousel */
+    .carousel{
+         /* Carousel Caption */
+        .carousel-caption {
+            h1 {
+                font-size: 3rem;
+            }
+            .highlight-text{
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+/* Tablets/Ipads Only */
+@media (min-width: 768px) {
+    
+}
+
+@media (max-width: 767.98px) {
+    /* Footer */
+    .footer-nav {
+        justify-content: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+/* Desktop Only */
+@media (max-width: 991.98px) {
+    /* Navbar */
+    .navbar {
+        .navbar-nav {
+            .nav-link {
+                &,
+                &.show {
+                    padding: 10px 0;
+                    color: $white;
+                }
+            }
+        }
+        .btn-transparent {
+            background: $theme!important;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    /* Navbar */
+    .navbar {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        border-bottom: 1px solid rgba(256, 256, 256, .1);
+        z-index: 999;
+    }
+
+   /* Gallery */
+    .gallery {
+        .box {
+            margin: -15px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    /* Footer */
+    .footer {
+        padding: 30px 0;
+    }
+}
