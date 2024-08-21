@@ -203,20 +203,24 @@ a {
     &::before {
         content: "";
         position: absolute;
-        width: 100px;
+        width: 100px; /* Adjust Bottom line */
         height: 3px;
-        background: $theme;
         bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 0; /* Start from the left */
+        background: $theme;
         border-radius: 2px;
+    }
+
+    &.text-center::before {
+        left: 50%; /* Center it when the content is centered */
+        transform: translateX(-50%);
     }
 }
 
 /* Navbar */
 .navbar {
     .navbar-brand img {
-        width: 100px;
+        width: 150px;
         height: auto;
         max-width: 100%;
         pointer-events: none; /* Prevents clicking to protect logo from being downloaded */
@@ -294,17 +298,6 @@ a {
         }
     }
 
-    .social-icons {
-        a {
-            font-size: 20px;
-            transition: color 0.3s ease;
-
-            &:hover {
-                color: $theme;
-            }
-        }
-    }
-
     .logo-footer {
         max-width: 300px; // Adjust size as needed
         height: auto;
@@ -348,7 +341,7 @@ a {
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(9, 30, 62, 0.8); // Dark semi-transparent background
+      background: rgba(9, 30, 62, 0.7); // Dark semi-transparent background
       z-index: 1; // Ensures the caption is above other content
         h1 {
             font-size: 4.5rem;
