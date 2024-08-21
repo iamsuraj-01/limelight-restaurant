@@ -40,6 +40,15 @@ body {
 .text-justify {
     text-align: justify;
 }
+.text-last-left {
+    text-align-last: left;
+}
+.text-last-center {
+    text-align-last: center;
+}
+.text-last-right {
+    text-align-last: right;
+}
 
 /* Letter-Spacing Utilities */
 .ls-1 {
@@ -367,43 +376,7 @@ a {
 }
 
 /* Service */
-.service-item {
-    position: relative;
-    height: 300px;
-    padding: 0 30px;
-    transition: bottom .5s, opacity .5s; // Specify properties to transition
-
-    .service-icon {
-        margin-bottom: 30px;
-        width: 60px;
-        height: 60px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: $theme;
-        border-radius: 2px;
-        transform: rotate(-45deg);
-
-        .text-white {
-            transform: rotate(45deg);
-        }
-    }
-
-    a.btn {
-        position: absolute;
-        width: 60px;
-        bottom: -48px;
-        left: 50%;
-        margin-left: -30px;
-        opacity: 0;
-        transition: bottom .5s, opacity .5s; // Ensure button transition matches
-    }
-
-    &:hover a.btn {
-        bottom: -24px;
-        opacity: 1;
-    }
-}
+/* write code here */
 
 /* Gallery */
 .gallery {
@@ -449,23 +422,29 @@ $theme: #ad854d; // theme color
             background: $theme;
         }
     }
-    .owl-item.center {
-        position: relative;
-        z-index: 1;
-    }
-    .owl-item .testimonial-item {
+    .owl-item {
+        background: #000; /* Set a default background color for all items */
+        padding: 15px; /* Additional padding for better spacing */
         transition: .5s;
+        color: #fff; /* Ensures text is readable on the dark background */
+    }
+    .owl-item.center {
+        background: $theme !important; /* Highlight the active item with a distinct color */
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Optional: add a shadow for better emphasis */
     }
     .owl-item.center .testimonial-item {
-        background: $theme-secondary !important;
-        box-shadow: 0 0 5px $theme;
         h4, .fa-star {
-            color: $theme !important; /* Set text and stars to black */
+            color: $dark !important; /* Change text and stars color specifically for active item */
         }
     }
 }
 
-  
+/* Adjustments for star spacing */
+.fa-star {
+    margin-right: 4px; /* Adds spacing between the stars */
+}
+
+
 /* Media Queries */
 
 /* Smartphones Only */

@@ -37,6 +37,21 @@ body {
   text-align: justify;
 }
 
+.text-last-left {
+  -moz-text-align-last: left;
+       text-align-last: left;
+}
+
+.text-last-center {
+  -moz-text-align-last: center;
+       text-align-last: center;
+}
+
+.text-last-right {
+  -moz-text-align-last: right;
+       text-align-last: right;
+}
+
 /* Letter-Spacing Utilities */
 .ls-1 {
   letter-spacing: 0.1rem;
@@ -307,40 +322,7 @@ a {
 }
 
 /* Service */
-.service-item {
-  position: relative;
-  height: 300px;
-  padding: 0 30px;
-  transition: bottom 0.5s, opacity 0.5s;
-}
-.service-item .service-icon {
-  margin-bottom: 30px;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #ad854d;
-  border-radius: 2px;
-  transform: rotate(-45deg);
-}
-.service-item .service-icon .text-white {
-  transform: rotate(45deg);
-}
-.service-item a.btn {
-  position: absolute;
-  width: 60px;
-  bottom: -48px;
-  left: 50%;
-  margin-left: -30px;
-  opacity: 0;
-  transition: bottom 0.5s, opacity 0.5s;
-}
-.service-item:hover a.btn {
-  bottom: -24px;
-  opacity: 1;
-}
-
+/* write code here */
 /* Gallery */
 .gallery .box {
   width: 350px;
@@ -381,19 +363,23 @@ a {
   width: 30px;
   background: #ad854d;
 }
-.testimonial-carousel .owl-item.center {
-  position: relative;
-  z-index: 1;
-}
-.testimonial-carousel .owl-item .testimonial-item {
+.testimonial-carousel .owl-item {
+  background: #000; /* Set a default background color for all items */
+  padding: 15px; /* Additional padding for better spacing */
   transition: 0.5s;
+  color: #fff; /* Ensures text is readable on the dark background */
 }
-.testimonial-carousel .owl-item.center .testimonial-item {
-  background: #000000 !important;
-  box-shadow: 0 0 5px #ad854d;
+.testimonial-carousel .owl-item.center {
+  background: #ad854d !important; /* Highlight the active item with a distinct color */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Optional: add a shadow for better emphasis */
 }
 .testimonial-carousel .owl-item.center .testimonial-item h4, .testimonial-carousel .owl-item.center .testimonial-item .fa-star {
-  color: #ad854d !important; /* Set text and stars to black */
+  color: #212529 !important; /* Change text and stars color specifically for active item */
+}
+
+/* Adjustments for star spacing */
+.fa-star {
+  margin-right: 4px; /* Adds spacing between the stars */
 }
 
 /* Media Queries */
