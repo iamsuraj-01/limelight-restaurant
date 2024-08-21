@@ -340,7 +340,7 @@ a {
 
 /* Testimonial Carousel */
 .testimonial-carousel .owl-dots {
-  margin-top: 15px;
+  margin-top: 30px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
