@@ -318,7 +318,41 @@ a {
 }
 
 /* Service */
-/* write code here */
+.menu {
+  background-color: #212529;
+  color: #FFFFFF;
+}
+.menu .nav-tabs .nav-link {
+  background: transparent;
+  border: none;
+}
+.menu .nav-tabs .nav-link:hover, .menu .nav-tabs .nav-link:focus {
+  border: none;
+  color: #FFFFFF;
+}
+.menu .nav-tabs .nav-link.active {
+  border-bottom: 3px solid #ad854d;
+}
+.menu .card {
+  background-color: transparent;
+  border: none;
+}
+.menu .card img {
+  border-radius: 0.5rem;
+}
+.menu .card .card-title {
+  color: #ad854d;
+}
+.menu .text-theme {
+  color: #ad854d;
+}
+.menu .bg-theme {
+  background: #ad854d;
+}
+.menu .text-secondary-theme {
+  color: #000000;
+}
+
 /* Gallery */
 .gallery .box {
   width: 350px;

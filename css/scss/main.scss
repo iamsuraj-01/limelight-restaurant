@@ -369,7 +369,49 @@ a {
 }
 
 /* Service */
-/* write code here */
+.menu {
+    background-color: $dark;
+    color: $white;
+
+    .nav-tabs .nav-link {
+        background: transparent;
+        border: none;
+        &:hover, &:focus {
+            border: none;
+            color: $white;
+        }
+        &.active {
+            border-bottom: 3px solid $theme;
+        }
+    }
+
+    .card {
+        background-color: transparent;
+        border: none;
+
+        img {
+            border-radius: 0.5rem; // Customizable to match your style
+        }
+
+        .card-title {
+            color: $theme;
+        }
+    }
+
+    .text-theme {
+        color: $theme;
+    }
+
+    .bg-theme {
+        background: $theme;
+    }
+
+    .text-secondary-theme {
+        color: $theme-secondary;
+    }
+}
+
+
 
 /* Gallery */
 .gallery {
