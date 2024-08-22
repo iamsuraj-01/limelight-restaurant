@@ -370,8 +370,6 @@ a {
 
 /* Service */
 .menu {
-    background-color: $dark;
-    color: $white;
 
     .nav-tabs .nav-link {
         background: transparent;
@@ -379,7 +377,7 @@ a {
         border: none;
         &:hover, &:focus {
             border: none;
-            color: $theme;
+            color: $white;
         }
         &.active {
             border-bottom: 3px solid $theme;

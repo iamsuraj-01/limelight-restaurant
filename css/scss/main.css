@@ -318,10 +318,6 @@ a {
 }
 
 /* Service */
-.menu {
-  background-color: #212529;
-  color: #FFFFFF;
-}
 .menu .nav-tabs .nav-link {
   background: transparent;
   color: #FFFFFF;
@@ -329,7 +325,7 @@ a {
 }
 .menu .nav-tabs .nav-link:hover, .menu .nav-tabs .nav-link:focus {
   border: none;
-  color: #ad854d;
+  color: #FFFFFF;
 }
 .menu .nav-tabs .nav-link.active {
   border-bottom: 3px solid #ad854d;
