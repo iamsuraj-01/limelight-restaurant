@@ -375,14 +375,15 @@ a {
 
     .nav-tabs .nav-link {
         background: transparent;
+        color: $white;
         border: none;
         &:hover, &:focus {
             border: none;
-            color: $white;
+            color: $theme;
         }
         &.active {
             border-bottom: 3px solid $theme;
-            color: $white;
+            color: $theme;
         }
     }
 
