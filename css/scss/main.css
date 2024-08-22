@@ -332,6 +332,7 @@ a {
 }
 .menu .nav-tabs .nav-link.active {
   border-bottom: 3px solid #ad854d;
+  color: #FFFFFF;
 }
 .menu .card {
   background-color: transparent;
