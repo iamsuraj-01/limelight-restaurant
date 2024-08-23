@@ -382,12 +382,12 @@ a {
 
 .parallax-section {
   position: relative;
-  background-image: url("../../images/carousel-1.jpg");
+  background-image: url("../../images/carousel-2.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 400px;
+  min-height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -400,7 +400,7 @@ a {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.7);
 }
 .parallax-section .container {
   position: relative;
