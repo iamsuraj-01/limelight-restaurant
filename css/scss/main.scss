@@ -440,6 +440,36 @@ a {
     }
 }
 
+.parallax-section {
+    position: relative;
+    background-image: url('../../images/carousel-1.jpg'); // Place your image path here
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.8); // Dark overlay for better text visibility
+    }
+  
+    .container {
+      position: relative;
+      z-index: 2; // Ensure text appears above the overlay
+    }
+  }
+  
+
 /* Gallery */
 .gallery {
     .box {
