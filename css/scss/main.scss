@@ -252,6 +252,14 @@ a {
     }
 }
 
+/* Zoom In Effect */
+.hover-zoom {
+    transition: 0.5s;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
 /* Navbar */
 .navbar {
     .navbar-brand img {
