@@ -675,9 +675,10 @@ a {
 /* Book table Page */
 
 /* Reservation Section */
-.reservation-section {
+.form-section {
 
     h2 {
+        font-size: 2.8rem;
         font-weight: bold;
         margin-bottom: 0.5rem;
     }
@@ -688,7 +689,7 @@ a {
     }
 }
 
-.reservation-form {
+.online-form {
     .form-control {
         background-color: $white;
         color: $dark;
@@ -785,11 +786,11 @@ a {
         }
     }
 
-    .reservation-section {
+    .form-section {
         padding: 2rem 1rem;
     }
 
-    .reservation-form {
+    .online-form {
         .form-control, .btn {
             padding: 0.75rem 1rem;
             font-size: 0.9rem;
