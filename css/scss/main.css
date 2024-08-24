@@ -373,7 +373,6 @@ a {
   text-align: left;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 20px;
-  margin-right: 20px;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
 }
@@ -657,7 +656,6 @@ a {
     top: 40%;
     transform: translateY(-40%);
     padding: 15px;
-    margin-right: 15px;
   }
   .carousel-item .carousel-caption h5 {
     font-size: 1.9rem;
