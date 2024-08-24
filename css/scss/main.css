@@ -142,6 +142,30 @@ a {
   z-index: 99;
 }
 
+/* Whatsapp Button */
+.whatsapp-popup {
+  position: fixed;
+  bottom: 80px;
+  right: 23px;
+  background-color: #25d366;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: 0.5s;
+}
+.whatsapp-popup a {
+  font-size: 30px;
+  line-height: 60px;
+}
+.whatsapp-popup:hover {
+  background-color: #1ebe57;
+}
+
 /* Spinner */
 .spinner {
   width: 40px;
@@ -333,7 +357,7 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(9, 30, 62, 0.7);
+  background: rgba(9, 30, 62, 0.5);
   z-index: 1;
 }
 .carousel .carousel-caption h1 {
@@ -518,6 +542,14 @@ a {
   }
   .social-icons {
     justify-content: center;
+  }
+  /* Whatsapp Button */
+  .whatsapp-popup {
+    width: 50px;
+    height: 50px;
+  }
+  .whatsapp-popup a {
+    font-size: 24px;
   }
 }
 /* Desktop Only */
