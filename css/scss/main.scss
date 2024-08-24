@@ -539,7 +539,10 @@ a {
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Optional: add a shadow for better emphasis */
     }
     .owl-item.center .testimonial-item {
-        h4, .fa-star {
+        h4 {
+            color: $white !important; /* Change text and stars color specifically for active item */
+        }
+        .fa-star {
             color: $dark !important; /* Change text and stars color specifically for active item */
         }
     }

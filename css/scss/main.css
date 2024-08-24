@@ -471,7 +471,10 @@ a {
   background: #ad854d !important; /* Highlight the active item with a distinct color */
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Optional: add a shadow for better emphasis */
 }
-.testimonial-carousel .owl-item.center .testimonial-item h4, .testimonial-carousel .owl-item.center .testimonial-item .fa-star {
+.testimonial-carousel .owl-item.center .testimonial-item h4 {
+  color: #FFFFFF !important; /* Change text and stars color specifically for active item */
+}
+.testimonial-carousel .owl-item.center .testimonial-item .fa-star {
   color: #212529 !important; /* Change text and stars color specifically for active item */
 }
 
