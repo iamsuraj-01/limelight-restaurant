@@ -587,6 +587,90 @@ a {
     }
 }
 
+/* About Us Page */
+.about-page-intro {
+    .content {
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+    }
+    
+    .icon {
+        width: 50px;
+        height: 50px;
+        .bi {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.about-page-facts {
+    .fact-card {
+        background-color: $theme-secondary;
+        color: $white;
+        border-radius: 15px;
+        transition: background-color 0.3s, color 0.3s;
+
+        .icon {
+            font-size: 3rem;
+            color: $theme;
+        }
+
+        h2 {
+            color: $theme; // Specific yellow color
+            font-weight: bold;
+        }
+
+        &:hover {
+            background-color: $theme;
+            color: $dark;
+
+            .icon {
+                color: $white;
+            }
+
+            h2 {
+                color: $white;
+            }
+            .text-muted {
+                color: $white!important;
+            }
+        }
+    }
+
+    .text-muted {
+        color: rgba(255, 255, 255, 0.75); // Adjusting the muted text color
+        font-weight: bold;
+    }
+}
+
+/* Book table */
+.book-table {
+
+    h2 {
+        color: $white;
+    }
+
+    p {
+        color: $white;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .row.g-3 {
+        margin-top: 15px;
+    }
+}
 
 /* Media Queries */
 
@@ -611,6 +695,15 @@ a {
         p {
             font-size: 16px!important;
             padding: 10px!important;
+        }
+    }
+
+    .about-page-intro {
+        .content h2 {
+            font-size: 1.5rem;
+        }
+        .content p {
+            font-size: 0.8rem;
         }
     }
 }
@@ -639,6 +732,25 @@ a {
             font-size: 24px;
         }
     }
+
+    .about-page-intro {
+        .content h2 {
+            font-size: 1.75rem;
+        }
+        .content p {
+            font-size: 0.875rem;
+        }
+    }
+
+    .book-table {
+        .row.g-3 .col-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+        .row.g-3 .col-12 {
+            margin-top: 15px;
+        }
+    }
 }
 
 /* Desktop Only */
@@ -656,6 +768,15 @@ a {
         }
         .btn-transparent {
             background: $theme!important;
+        }
+    }
+
+    .about-page-intro {
+        .content h2 {
+            font-size: 2rem;
+        }
+        .content p {
+            font-size: 0.9rem;
         }
     }
 }

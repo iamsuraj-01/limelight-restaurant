@@ -511,6 +511,73 @@ a {
   }
 }
 
+/* About Us Page */
+.about-page-intro .content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.about-page-intro .content p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.about-page-intro .icon {
+  width: 50px;
+  height: 50px;
+}
+.about-page-intro .icon .bi {
+  font-size: 1.5rem;
+}
+
+.about-page-facts .fact-card {
+  background-color: #000000;
+  color: #FFFFFF;
+  border-radius: 15px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.about-page-facts .fact-card .icon {
+  font-size: 3rem;
+  color: #ad854d;
+}
+.about-page-facts .fact-card h2 {
+  color: #ad854d;
+  font-weight: bold;
+}
+.about-page-facts .fact-card:hover {
+  background-color: #ad854d;
+  color: #212529;
+}
+.about-page-facts .fact-card:hover .icon {
+  color: #FFFFFF;
+}
+.about-page-facts .fact-card:hover h2 {
+  color: #FFFFFF;
+}
+.about-page-facts .fact-card:hover .text-muted {
+  color: #FFFFFF !important;
+}
+.about-page-facts .text-muted {
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: bold;
+}
+
+/* Book table */
+.book-table h2 {
+  color: #FFFFFF;
+}
+.book-table p {
+  color: #FFFFFF;
+}
+.book-table img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.book-table .row.g-3 {
+  margin-top: 15px;
+}
+
 /* Media Queries */
 /* Smartphones Only */
 @media (max-width: 640px) {
@@ -534,6 +601,12 @@ a {
     font-size: 16px !important;
     padding: 10px !important;
   }
+  .about-page-intro .content h2 {
+    font-size: 1.5rem;
+  }
+  .about-page-intro .content p {
+    font-size: 0.8rem;
+  }
 }
 /* Tablets/Ipads Only */
 @media (max-width: 767.98px) {
@@ -552,6 +625,19 @@ a {
   .whatsapp-popup a {
     font-size: 24px;
   }
+  .about-page-intro .content h2 {
+    font-size: 1.75rem;
+  }
+  .about-page-intro .content p {
+    font-size: 0.875rem;
+  }
+  .book-table .row.g-3 .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .book-table .row.g-3 .col-12 {
+    margin-top: 15px;
+  }
 }
 /* Desktop Only */
 @media (max-width: 991.98px) {
@@ -562,6 +648,12 @@ a {
   }
   .navbar .btn-transparent {
     background: #ad854d !important;
+  }
+  .about-page-intro .content h2 {
+    font-size: 2rem;
+  }
+  .about-page-intro .content p {
+    font-size: 0.9rem;
   }
 }
 @media (min-width: 992px) {
