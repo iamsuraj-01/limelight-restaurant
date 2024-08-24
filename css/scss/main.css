@@ -137,7 +137,7 @@ a {
 .back-to-top {
   position: fixed;
   display: none;
-  right: 30px;
+  right: 28px;
   bottom: 20px;
   z-index: 99;
 }
