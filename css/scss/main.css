@@ -658,14 +658,10 @@ a {
     padding: 15px;
   }
   .carousel-item .carousel-caption h5 {
-    font-size: 1.9rem;
+    font-size: 2rem;
   }
   .carousel-item .carousel-caption p {
-    font-size: 0.9rem;
-  }
-  .carousel-item .carousel-caption .btn {
-    padding: 0.5rem 1rem;
-    margin-bottom: 5px;
+    font-size: 1rem;
   }
   /* Footer */
   .footer-nav {
