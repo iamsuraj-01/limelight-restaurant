@@ -578,6 +578,35 @@ a {
   margin-top: 15px;
 }
 
+/* Book table Page */
+/* Reservation Section */
+.reservation-section h2 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.reservation-section p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.reservation-form .form-control {
+  background-color: #FFFFFF;
+  color: #212529;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 1rem;
+  font-size: 1rem;
+}
+.reservation-form .form-control::-moz-placeholder {
+  color: #7e8b98;
+  font-size: 0.9rem;
+}
+.reservation-form .form-control::placeholder {
+  color: #7e8b98;
+  font-size: 0.9rem;
+}
+
 /* Media Queries */
 /* Smartphones Only */
 @media (max-width: 640px) {
@@ -637,6 +666,13 @@ a {
   }
   .book-table .row.g-3 .col-12 {
     margin-top: 15px;
+  }
+  .reservation-section {
+    padding: 2rem 1rem;
+  }
+  .reservation-form .form-control, .reservation-form .btn {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
   }
 }
 /* Desktop Only */

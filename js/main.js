@@ -98,6 +98,13 @@
         $('#modalImage').attr('src', src);
         $('#galleryModal').modal('show');
     });
+
+    // Date picker
+    $(document).ready(function() {
+        $('#dob').datepicker({
+            dateFormat: 'mm/dd/yy'
+        });
+    });
     
 })(jQuery);
 

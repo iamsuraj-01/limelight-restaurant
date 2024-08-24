@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Book Table</title>
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<meta content="HTML" name="keywords">
+		<meta content="HTML" name="description">
+
+		<!-- Favicon -->
+		<link href="images/favicon.ico" rel="icon">
+
+		<!-- Owl Carousel Slider CSS -->
+		<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+		<!-- Light Slider CSS -->
+		<link href="lib/lightslider/lightslider.css" rel="stylesheet">
+
+		<!-- Animation CSS -->
+		<link href="lib/animate/animate.min.css" rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Font Awesome CSS -->
+        <link href="fonts/css/font-awesome.min.css" rel="stylesheet">
+
+		<!-- Bootstrap Icon Font CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- jQuery Date Picker CSS -->
+        <link rel="stylesheet" href="jquery/jquery-ui.css">
+        
+        <!-- Custom CSS -->
+        <link href="css/scss/main.css" rel="stylesheet">
+    </head>
+
+    <body>
+		<!-- Spinner Section -->
+		<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+			<div class="spinner"></div>
+		</div>
+
+		<!-- Back To Top Section -->
+		<button class="btn btn-lg btn-theme btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></button>
+
+		<!-- Whatsapp Section -->
+		<div class="whatsapp-popup">
+			<a class="text-light" href="https://wa.me/919528830869" target="_blank">
+				<i class="fab fa-whatsapp"></i>
+			</a>
+		</div>
+		
+		<!-- Topbar Section -->
+		<div class="container-fluid bg-dark px-5 d-none d-lg-block">
+			<div class="row gx-0">
+				<div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+					<div class="d-inline-flex align-items-center" style="height: 45px;">
+						<a class="me-3 text-light" href="https://maps.app.goo.gl/2iEVTy7Ruh6vnn8n8"><i class="fa fa-map-marker-alt me-2"></i>Lal Tappar, Uttarakhand-India</a>
+						<a class="me-3 text-light" href="tel:+919528830869"><i class="bi bi-telephone me-2"></i>+91 9528830869</a>
+						<a class="me-3 text-light" href="tel:+918077857632"><i class="bi bi-telephone me-2"></i>+91 8077857632</a>
+						<a class="me-3 text-light" href="mailto:limelightrestaurants@gmail.com"><i class="fa fa-envelope-open me-2"></i>limelightrestaurants@gmail.com</a>
+					</div>
+				</div>
+				<div class="col-lg-4 text-center text-lg-end">
+					<div class="d-inline-flex align-items-center" style="height: 45px;">
+						<a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.facebook.com/people/Limelightrestaurant/61562247476638/"><i class="fab fa-facebook-f fw-normal"></i></a>
+						<a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.instagram.com/limelightrestaurant/"><i class="fab fa-instagram fw-normal"></i></a>
+						<a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://x.com/LLRestaurant01"><i class="fab fa-twitter fw-normal"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Header Section -->
+		<header class="container-fluid position-relative p-0">
+			<!-- Navbar Section -->
+			<nav class="navbar navbar-expand-lg navbar-dark px-4 py-3 py-lg-0">
+				<a href="/" class="navbar-brand p-0">
+					<img src='images/logo.png' alt="Logo" rel="preload" class="navbar-brand-image" />
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+					<span class="fa fa-bars"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<div class="navbar-nav ms-auto py-0">
+						<a href="/" class="nav-item nav-link active">Home</a>
+						<a href="about.html" class="nav-item nav-link">About</a>
+						<a href="menu.html" class="nav-item nav-link">Menu</a>
+						<a href="service.html" class="nav-item nav-link">Services</a>
+						<a href="gallery.html" class="nav-item nav-link">Gallery</a>
+						<a href="contact.html" class="nav-item nav-link">Contact</a>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+        <!-- Banner Section -->
+		<div class="container-fluid bg-theme py-5 banner" style="background: linear-gradient(rgba(9, 30, 62, 0.7), rgba(9, 30, 62, 0.7)), url('images/carousel-1.jpg') center center no-repeat;">
+			<div class="row py-5">
+				<div class="col-12 pt-lg-5 mt-lg-5 text-center">
+					<h1 class="display-4 text-white animated zoomIn">Booking</h1>
+					<a href="/" class="h5 text-white">Home</a>
+					<i class="fas fa-angle-right text-white px-2"></i>
+					<a href="book-table.html" class="h5 text-white">Booking</a>
+				</div>
+			</div>
+		</div>
+
+        <section class="reservation-section py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <h2 class="display-5 text-theme">Online Reservation</h2>
+                    <p class="text-white">Opens Daily at 10:30 AM to 11:00 PM</p>
+                </div>
+
+                <form class="reservation-form">
+                    <div class="row">
+                        <div class="col-lg-4 mb-3">
+                            <input type="text" class="form-control" placeholder="FULL NAME">
+                        </div>
+                        <div class="col-lg-4 mb-3">
+                            <input type="email" class="form-control" placeholder="EMAIL">
+                        </div>
+                        <div class="col-lg-4 mb-3">
+                            <input type="tel" class="form-control" placeholder="PHONE">
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <input type="text" class="form-control" id="dob" placeholder="DATE & TIME">
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <input type="number" class="form-control" placeholder="Person" min="1" max="50">
+                        </div>
+                        <div class="col-lg-12 mb-5">
+                            <textarea class="form-control" rows="4" placeholder="SPECIAL REQUEST"></textarea>
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <button type="submit" class="btn btn-theme btn-lg text-white px-4 py-2">Make Reservation</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+        <hr>
+		<!-- Footer Section -->
+		<footer class="footer bg-dark py-5">
+			<div class="container">
+				<!-- Footer Navigation 
+				<div class="row justify-content-center mb-4">
+					<div class="col-auto">
+						<ul class="nav footer-nav">
+							<li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+							<li class="nav-item"><a href="#" class="nav-link">About</a></li>
+						</ul>
+					</div>
+				</div>
+                -->
+
+				<div class="row text-center text-lg-start">
+					<!-- Location and Social Media -->
+					<div class="col-md-4 col-lg-4 mb-4 mb-lg-0">
+						<h5 class="text-uppercase">Location</h5>
+						<div class="d-flex mb-2">
+							<i class="bi bi-geo-alt text-theme me-2"></i>
+							<a class="text-light mb-0" href="https://maps.app.goo.gl/2iEVTy7Ruh6vnn8n8">Near Naturevilla, Laltappar Chowk<br>
+								Highway Road, Dehradun UK-248005
+							</a>
+						</div>
+						<div class="d-flex mb-2">
+							<i class="bi bi-envelope-open text-theme me-2"></i>
+							<a class="text-light mb-0" href="mailto:limelightrestaurants@gmail.com">limelightrestaurants@gmail.com</a>
+						</div>
+						<div class="d-flex mb-2">
+							<i class="bi bi-telephone text-theme me-2"></i>
+							<a class="text-light mb-0" href="tel:+919528830869">+91 9528830869</a>
+						</div>
+						<div class="d-flex mb-2">
+							<i class="bi bi-telephone text-theme me-2"></i>
+							<a class="text-light mb-0" href="tel:+918077857632">+91 8077857632</a>
+						</div>
+
+						<h5 class="text-uppercase mt-4">Follow Us</h5>
+						<div class="d-inline-flex align-items-center">
+							<a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.facebook.com/people/Limelightrestaurant/61562247476638/"><i class="fab fa-facebook-f fw-normal"></i></a>
+							<a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.instagram.com/limelightrestaurant/"><i class="fab fa-instagram fw-normal"></i></a>
+							<a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://x.com/LLRestaurant01"><i class="fab fa-twitter fw-normal"></i></a>
+						</div>
+					</div>
+
+					<!-- Logo -->
+					<div class="col-md-4 col-lg-4 mb-4 mb-lg-0 d-flex justify-content-center align-items-center">
+						<img src="images/logo.png" alt="Limelight Restaurant" class="img-fluid logo-footer">
+					</div>
+
+					<!-- Hours -->
+					<div class="col-md-4 col-lg-4 text-md-center text-lg-center">
+						<h5 class="text-uppercase">Hours</h5>
+						<ul class="list-unstyled">
+							<li>Monday : 08AM – 11PM</li>
+							<li>Tuesday : 08AM – 11PM</li>
+							<li>Wednesday : 08AM – 11PM</li>
+							<li>Thursday : 08AM – 11PM</li>
+							<li>Friday : 08AM – 11PM</li>
+							<li>Saturday : 08AM – 11PM</li>
+							<li>Sunday : 08AM – 11PM</li>
+						</ul>
+					</div>
+				</div>
+				
+				<!-- Copyright -->
+				<div class="text-center mt-4">
+					<p class="mb-0">&copy; <a class="text-white" href="/">Limelight Restaurant</a>. All Rights Reserved. 
+						Designed by <a class="text-white" href="https://jakhmolaweb.co.in/">Jakhmola Web House</a>
+					</p>
+				</div>
+			</div>
+		</footer>
+
+        <!-- jQuery -->
+        <script src="jquery/jquery-3.6.0.min.js"></script>
+
+        <!-- jQuery Date Picker -->
+        <script src="jquery/jquery-ui.min.js"></script> 
+
+		<!-- Animation JS -->
+		<script src="lib/wow/wow.min.js"></script>
+
+		<!-- Spinner JS -->
+		<script src="lib/counterup/counterup.min.js"></script>
+
+		<!-- Owl Carousel Slider JS -->
+		<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+		<!-- Light Slider Slider JS -->
+		<script src="lib/lightslider/lightslider.js"></script>
+
+		<!-- Waypoints JS (Required for Owl Carousel and Light Slider to function properly) -->
+		<script src="lib/waypoints/waypoints.min.js"></script>
+
+        <!-- Bootstrap JS -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Custom JS -->
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
