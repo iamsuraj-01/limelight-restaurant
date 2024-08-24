@@ -264,6 +264,9 @@ a {
 }
 
 /* Navbar */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.6);
+}
 .navbar .navbar-brand img {
   width: 150px;
   height: auto;
@@ -346,28 +349,44 @@ a {
 
 /* Landing Page Start */
 /* Carousel */
-.carousel .carousel-inner .carousel-item img {
+.carousel-item {
+  position: relative;
+  min-height: 700px;
+}
+.carousel-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 800px;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.carousel .carousel-caption {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(9, 30, 62, 0.5);
-  z-index: 1;
+.carousel-item .carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+  max-width: 500px;
+  z-index: 10;
+  color: #fff;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  margin-right: 20px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
-.carousel .carousel-caption h1 {
-  font-size: 4rem;
+.carousel-item .carousel-caption h5 {
+  font-size: 2.8rem;
 }
-.carousel .carousel-control-prev .carousel-control-prev-icon,
-.carousel .carousel-control-prev .carousel-control-next-icon,
-.carousel .carousel-control-next .carousel-control-prev-icon,
-.carousel .carousel-control-next .carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.5);
+.carousel-item .carousel-caption p {
+  font-size: 1rem;
+}
+
+/* Hide Carousel Controls */
+.carousel-control-prev, .carousel-control-next {
+  display: none;
 }
 
 /* Banner */
@@ -620,17 +639,6 @@ a {
     max-width: 100%;
     height: auto;
   }
-  /* Carousel */
-  .carousel {
-    /* Carousel Caption */
-  }
-  .carousel h1 {
-    font-size: 2.2rem !important;
-  }
-  .carousel p {
-    font-size: 16px !important;
-    padding: 10px !important;
-  }
   .about-page-intro .content h2 {
     font-size: 1.5rem;
   }
@@ -640,6 +648,27 @@ a {
 }
 /* Tablets/Ipads Only */
 @media (max-width: 767.98px) {
+  /* Carousel */
+  .carousel-item {
+    min-height: 700px;
+  }
+  .carousel-item .carousel-caption {
+    left: 0%;
+    top: 40%;
+    transform: translateY(-40%);
+    padding: 15px;
+    margin-right: 15px;
+  }
+  .carousel-item .carousel-caption h5 {
+    font-size: 1.6rem;
+  }
+  .carousel-item .carousel-caption p {
+    font-size: 0.9rem;
+  }
+  .carousel-item .carousel-caption .btn {
+    padding: 0.5rem 1rem;
+    margin-bottom: 5px;
+  }
   /* Footer */
   .footer-nav {
     justify-content: center;

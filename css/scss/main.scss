@@ -288,6 +288,7 @@ a {
 
 /* Navbar */
 .navbar {
+    background-color: rgba(0, 0, 0, 0.6);
     .navbar-brand img {
         width: 150px;
         height: auto;
@@ -394,38 +395,46 @@ a {
 /* Landing Page Start */
 
 /* Carousel */
-.carousel {
-    .carousel-inner {
-      .carousel-item {
-        img {
-          width: 100%;
-          height: 800px; // Adjust as needed
-          object-fit: cover;
-        }
-      }
+.carousel-item {
+    position: relative;
+    min-height: 700px;
+  
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   
     .carousel-caption {
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(9, 30, 62, 0.5); // Dark semi-transparent background
-      z-index: 1; // Ensures the caption is above other content
-      h1 {
-        font-size: 4rem;
-      }
-    }
-  
-    .carousel-control-prev,
-    .carousel-control-next {
-        // display: none;
+        position: absolute;
+        top: 50%;
+        left: 0%; // Left margin to position caption on the left
+        transform: translateY(-50%);
+        max-width: 500px;
+        z-index: 10;
+        color: #fff;
+        text-align: left;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 20px; // Increased padding for breathing room
+        margin-right: 20px; // Adds right space within the overlay
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        h5 {
+            font-size: 2.8rem;
+        }
 
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon {
-            background-color: rgba(0, 0, 0, 0.5); // Optional: Semi-transparent background for icons
+        p {
+            font-size: 1rem;
         }
     }
+}
+  
+/* Hide Carousel Controls */
+.carousel-control-prev, .carousel-control-next {
+    display: none; // Hides the navigation buttons
 }
 
 /* Banner */
@@ -720,18 +729,6 @@ a {
         }
     }
 
-    /* Carousel */
-    .carousel{
-        /* Carousel Caption */
-        h1 {
-            font-size: 2.2rem!important;
-        }
-        p {
-            font-size: 16px!important;
-            padding: 10px!important;
-        }
-    }
-
     .about-page-intro {
         .content h2 {
             font-size: 1.5rem;
@@ -748,6 +745,32 @@ a {
 }
 
 @media (max-width: 767.98px) {
+    /* Carousel */
+    .carousel-item {
+        min-height: 700px;
+    
+        .carousel-caption {
+          left: 0%;
+          top: 40%;
+          transform: translateY(-40%);
+          padding: 15px;
+          margin-right: 15px; // Responsive right margin
+    
+          h5 {
+            font-size: 1.6rem;
+          }
+    
+          p {
+            font-size: 0.9rem;
+          }
+  
+          .btn {
+              padding: 0.5rem 1rem;
+              margin-bottom: 5px; // Adjust this as well for mobile if necessary
+          }
+        }
+    }
+      
     /* Footer */
     .footer-nav {
         justify-content: center;
