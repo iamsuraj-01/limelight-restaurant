@@ -357,7 +357,7 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(9, 30, 62, 0.5);
+  background: rgba(9, 30, 62, 0.4);
   z-index: 1;
 }
 .carousel .carousel-caption h1 {
