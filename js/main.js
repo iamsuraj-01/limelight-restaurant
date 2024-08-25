@@ -101,12 +101,30 @@
         $('#galleryModal').modal('show');
     });
 
-    // Date picker
-    $(document).ready(function() {
-        $('#dob').datepicker({
-            dateFormat: 'mm/dd/yy'
+    $(document).ready(function(){
+        // Date Picker
+        $('#date').datepicker({
+            dateFormat: 'mm/dd/yy',
+            changeMonth: true,
+            changeYear: true
         });
     });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize Flatpickr as a time picker
+        flatpickr("#timepicker", {
+            enableTime: true,
+            noCalendar: true,
+            dateFormat: "h:i K",   // 12-hour format with AM/PM
+            time_24hr: false,
+            minuteIncrement: 30,   // 30-minute intervals
+            minTime: "10:00",      // Start time (10:00 AM)
+            maxTime: "23:00",      // End time (11:00 PM)
+            defaultDate: "10:00",  // Default time shown
+            theme: "bootstrap5"    // Optional Bootstrap 5 theme
+        });
+    });
+    
     
 })(jQuery);
 

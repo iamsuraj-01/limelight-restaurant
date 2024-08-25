@@ -313,13 +313,16 @@ a {
                 color: $theme;
             }
         }
+        .show > .nav-link {
+            color: $theme;
+        }
     }
 
     .navbar-toggler {
         color: $theme !important;
         border-color: $theme !important;
     }
-
+    
     .dropdown-menu {
         padding: 0; // Setting padding to 0
         border-radius: 0;
@@ -327,8 +330,10 @@ a {
         .dropdown-item {
             // Default styling for dropdown items
             transition: background-color 0.3s; // Smooth transition for background color
-            border-bottom: 1px solid #d0d0d0; /* faint border bottom line */
+            border-bottom: 1px solid $theme; /* faint border bottom line */
             text-align: center;
+            background-color: $theme-secondary;
+            color: $white;
             padding: 10px;
 
             &:hover {
