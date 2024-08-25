@@ -372,8 +372,6 @@ a {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
 }
 .carousel-item .carousel-caption h5 {
   font-size: 3.9rem;
