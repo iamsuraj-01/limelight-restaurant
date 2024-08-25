@@ -352,6 +352,27 @@ a {
 .carousel-item {
   position: relative;
   min-height: 700px;
+  /* Carousel 
+  .carousel-caption {
+      position: absolute;
+      bottom: 0; // Anchoring it at the bottom
+      left: 50%; // Centering it horizontally
+      transform: translateX(-50%); // Adjust horizontally to truly center
+      width: 50%; // Ensure it spans the full width if neede
+      z-index: 10;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+
+      h5 {
+          font-size: 3.9rem;
+      }
+
+      p {
+          font-size: 1rem;
+      }
+  }
+  */
 }
 .carousel-item img {
   position: absolute;
@@ -362,27 +383,10 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.carousel-item .carousel-caption {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 50%;
-  z-index: 10;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-}
-.carousel-item .carousel-caption h5 {
-  font-size: 3.9rem;
-}
-.carousel-item .carousel-caption p {
-  font-size: 1rem;
-}
 
 /* Hide Carousel Controls */
 .carousel-control-prev, .carousel-control-next {
-  display: none;
+  display: block;
 }
 
 /* Banner */
@@ -647,19 +651,23 @@ a {
   /* Carousel */
   .carousel-item {
     min-height: 600px;
-  }
-  .carousel-item .carousel-caption {
-    left: 50%;
-    bottom: 0%;
-    transform: translateX(-50%);
-    padding: 15px;
-    width: 100%;
-  }
-  .carousel-item .carousel-caption h5 {
-    font-size: 2.3rem;
-  }
-  .carousel-item .carousel-caption p {
-    font-size: 1rem;
+    /* Carousel 
+    .carousel-caption {
+        left: 50%; // Center horizontally
+        bottom: 0%; // Position at the very bottom
+        transform: translateX(-50%); // Shift it back to center it horizontally
+        padding: 15px; // Consistent padding
+        width: 100%; // Ensure it spans the full width if needed
+
+      h5 {
+        font-size: 2.3rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+    */
   }
   /* Footer */
   .footer-nav {

@@ -42,6 +42,7 @@
         }
     });
     
+    /*
     // Back To Top Button
     $(window).scroll(function() {
         if ($(this).scrollTop() > 300) {
@@ -55,6 +56,7 @@
         $('html, body').animate({ scrollTop: 0 }, 'smooth'); // Smooth scroll to the top
         return false; // Prevent default behavior (for safety)
     });
+    */
 
 
     // Testimonial Slider

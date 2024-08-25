@@ -408,7 +408,8 @@ a {
       height: 100%;
       object-fit: cover;
     }
-  
+    
+    /* Carousel 
     .carousel-caption {
         position: absolute;
         bottom: 0; // Anchoring it at the bottom
@@ -428,12 +429,12 @@ a {
             font-size: 1rem;
         }
     }
-    
+    */
 }
   
 /* Hide Carousel Controls */
 .carousel-control-prev, .carousel-control-next {
-    display: none; // Hides the navigation buttons
+    display: block;
 }
 
 /* Banner */
@@ -747,7 +748,8 @@ a {
     /* Carousel */
     .carousel-item {
         min-height: 600px;
-    
+        
+        /* Carousel 
         .carousel-caption {
             left: 50%; // Center horizontally
             bottom: 0%; // Position at the very bottom
@@ -763,6 +765,7 @@ a {
             font-size: 1rem;
           }
         }
+        */
     }
       
     /* Footer */
