@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Menu</title>
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<meta content="HTML" name="keywords">
+		<meta content="HTML" name="description">
+
+		<!-- Favicon -->
+		<link href="images/favicon.ico" rel="icon">
+
+		<!-- Owl Carousel Slider CSS -->
+		<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+		<!-- Light Slider CSS -->
+		<link href="lib/lightslider/lightslider.css" rel="stylesheet">
+
+		<!-- Animation CSS -->
+		<link href="lib/animate/animate.min.css" rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Font Awesome CSS -->
+        <link href="fonts/css/font-awesome.min.css" rel="stylesheet">
+
+		<!-- Bootstrap Icon Font CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+        
+        <!-- Custom CSS -->
+        <link href="css/scss/main.css" rel="stylesheet">
+    </head>
+
+    <body>
+		<!-- Spinner Section -->
+		<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+			<div class="spinner"></div>
+		</div>
+
+		<!-- Back To Top Section
+		<button class="btn btn-lg btn-theme btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></button>
+		-->
+
+		<!-- Whatsapp Section -->
+		<div class="whatsapp-popup">
+			<a class="text-light" href="https://wa.me/918791881683" target="_blank">
+				<i class="fab fa-whatsapp"></i>
+			</a>
+		</div>
+		
+		<!-- Topbar Section -->
+		<div class="container-fluid bg-dark px-5 d-none d-lg-block">
+			<div class="row gx-0">
+				<div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+					<div class="d-inline-flex align-items-center" style="height: 45px;">
+						<a class="me-3 text-light" href="https://maps.app.goo.gl/2iEVTy7Ruh6vnn8n8"><i class="fa fa-map-marker-alt me-2"></i>Lal Tappar, Uttarakhand-India</a>
+						<a class="me-3 text-light" href="tel:+919528830869"><i class="bi bi-telephone me-2"></i>+91 9528830869</a>
+						<a class="me-3 text-light" href="tel:+918077857632"><i class="bi bi-telephone me-2"></i>+91 8077857632</a>
+						<a class="me-3 text-light" href="mailto:limelightrestaurants@gmail.com"><i class="fa fa-envelope-open me-2"></i>limelightrestaurants@gmail.com</a>
+					</div>
+				</div>
+				<div class="col-lg-4 text-center text-lg-end">
+					<div class="d-inline-flex align-items-center" style="height: 45px;">
+						<a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.facebook.com/people/Limelightrestaurant/61562247476638/"><i class="fab fa-facebook-f fw-normal"></i></a>
+						<a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.instagram.com/limelightrestaurant/"><i class="fab fa-instagram fw-normal"></i></a>
+						<a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://x.com/LLRestaurant01"><i class="fab fa-twitter fw-normal"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Header Section -->
+		<header class="container-fluid position-relative p-0">
+			<!-- Navbar Section -->
+			<nav class="navbar navbar-expand-lg navbar-dark px-4 py-3 py-lg-0">
+				<a href="/" class="navbar-brand p-0">
+					<img src='images/logo.png' alt="Logo" rel="preload" class="navbar-brand-image" />
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+					<span class="fa fa-bars"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<div class="navbar-nav mx-auto py-0">
+						<a href="/" class="nav-item nav-link active">Home</a>
+						<a href="about.html" class="nav-item nav-link">About</a>
+						<a href="menu.html" class="nav-item nav-link">Menu</a>
+						<a href="service.html" class="nav-item nav-link">Services</a>
+						<a href="contact.html" class="nav-item nav-link">Contact</a>
+						<div class="nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Book Now</a>
+							<div class="dropdown-menu m-0">
+								<a href="book-table.html" class="dropdown-item">Book Table</a>
+								<a href="book-room.html" class="dropdown-item">Book Room</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+        <!-- Banner Section -->
+		<div class="container-fluid bg-theme py-5 banner" style="background: linear-gradient(rgba(9, 30, 62, 0.7), rgba(9, 30, 62, 0.7)), url('images/carousel-1.jpg') center center no-repeat;">
+			<div class="row py-5">
+				<div class="col-12 pt-lg-5 mt-lg-5 text-center">
+					<h1 class="display-4 text-white animated zoomIn">Menu</h1>
+					<a href="/" class="h5 text-white">Home</a>
+					<i class="fas fa-angle-right text-white px-2"></i>
+					<a href="menu.html" class="h5 text-white">Menu</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Menu Section -->
+		<div class="container-fluid py-5 wow fadeInUp menu" data-wow-delay="0.1s">
+			<div class="container py-5">
+				<div class="section-title text-center position-relative pb-3 mb-4 mx-auto" style="max-width: 600px;">
+					<h2 class="text-white fw-bold text-uppercase">Special<span class="text-theme"> Menu</span></h2>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-12">
+						<ul class="nav nav-tabs justify-content-center border-0 wow fadeInUp" data-wow-delay="0.3s" id="myTab" role="tablist">
+							<li class="nav-item" role="presentation">
+								<button class="nav-link active text-theme" id="first-tab" data-bs-toggle="tab" data-bs-target="#first" type="button" role="tab" aria-controls="first" aria-selected="true">All</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link text-theme" id="second-tab" data-bs-toggle="tab" data-bs-target="#second" type="button" role="tab" aria-controls="second" aria-selected="false">Breakfast</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link text-theme" id="third-tab" data-bs-toggle="tab" data-bs-target="#third" type="button" role="tab" aria-controls="third" aria-selected="false">Tandoori Veg</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link text-theme" id="fourth-tab" data-bs-toggle="tab" data-bs-target="#fourth" type="button" role="tab" aria-controls="fourth" aria-selected="false">Chinese Veg</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link text-theme" id="fifth-tab" data-bs-toggle="tab" data-bs-target="#fifth" type="button" role="tab" aria-controls="fifth" aria-selected="false">Indian Veg</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link text-theme" id="sixth-tab" data-bs-toggle="tab" data-bs-target="#sixth" type="button" role="tab" aria-controls="sixth" aria-selected="false">Tandoori Non Veg</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link text-theme" id="seventh-tab" data-bs-toggle="tab" data-bs-target="#seventh" type="button" role="tab" aria-controls="seventh" aria-selected="false">Chinese Non Veg</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link text-theme" id="eighth-tab" data-bs-toggle="tab" data-bs-target="#eighth" type="button" role="tab" aria-controls="eighth" aria-selected="false">Indian Non Veg</button>
+							</li>
+						</ul>
+						<div class="tab-content mt-5" id="myTabContent">
+							<!-- First Tab -->
+							<div class="tab-pane fade show active" id="first" role="tabpanel" aria-labelledby="first-tab">
+								<div class="row">
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.2s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-breakfast-aloo-parantha.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Aloo Parantha</h5>
+												<!-- <p class="card-text">₹50</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.3s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-tandoori-veg-achari-paneer-tikka.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Achari Paneer Tikka</h5>
+												<!-- <p class="card-text">₹480</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.4s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-tandoori-veg-mushroom-tikka.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Mushroom Tikka</h5>
+												<!-- <p class="card-text">₹450</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.5s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-tandoori-non-veg-afghani-chicken.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Afghani Chicken</h5>
+												<!-- <p class="card-text">₹350</p> -->
+											</div>
+										</div>
+									</div>
+								</div>
+		
+								<div class="row">
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.6s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-chinese-veg-chilli-garlic-noodles.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Veg Chilli Garlic Noodles</h5>
+												<!-- <p class="card-text">₹290</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.7s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-chinese-non-veg-chicken-garlic.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Chicken Garlic</h5>
+												<!-- <p class="card-text">₹450</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.8s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-indian-veg-dal-fry.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Dal Fry</h5>
+												<!-- <p class="card-text">₹220</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.9s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-indian-non-veg-egg-bhurji.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Egg Bhurji</h5>
+												<!-- <p class="card-text">₹210</p> -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		
+							<!-- Second Tab -->
+							<div class="tab-pane fade show" id="second" role="tabpanel" aria-labelledby="second-tab">
+								<div class="row">
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.2s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-breakfast-aloo-parantha.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Aloo Parantha</h5>
+												<!-- <p class="card-text">₹50</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.3s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-breakfast-veg-grilled-sandwich.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Veg Grilled Sandwich</h5>
+												<!-- <p class="card-text">₹120</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.4s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-breakfast-chole-bhature.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Chole Bhature</h5>
+												<!-- <p class="card-text">₹180</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.5s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-breakfast-paneer-parantha.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Paneer Parantha</h5>
+												<!-- <p class="card-text">₹80</p> -->
+											</div>
+										</div>
+									</div>
+								</div>
+		
+								<div class="row">
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.6s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-breakfast-poha.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Poha</h5>
+												<!-- <p class="card-text">₹150</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.7s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-breakfast-puri-bhaji.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Puri Bhaji</h5>
+												<!-- <p class="card-text">₹150</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.8s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-breakfast-veg-burger.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Veg Burger</h5>
+												<!-- <p class="card-text">₹100</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.9s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-breakfast-bread-toast.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Bread Toast</h5>
+												<!-- <p class="card-text">₹70</p> -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		
+							<!-- Third Tab -->
+							<div class="tab-pane fade show" id="third" role="tabpanel" aria-labelledby="third-tab">
+								<div class="row">
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.2s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-tandoori-veg-achari-paneer-tikka.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Achari Paneer Tikka</h5>
+												<!-- <p class="card-text">₹480</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.3s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-tandoori-veg-harabhara-kabab.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Harabhara Kabab</h5>
+												<!-- <p class="card-text">₹380</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.4s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-tandoori-veg-haryali-paneer-tikka.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Haryali Paneer Tikka</h5>
+												<!-- <p class="card-text">₹480</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.5s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-tandoori-veg-malai-soya-chaap.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Malai Soya Chaap</h5>
+												<!-- <p class="card-text">₹480</p> -->
+											</div>
+										</div>
+									</div>
+								</div>
+		
+								<div class="row">
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.6s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-tandoori-veg-mushroom-tikka.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Mushroom Tikka</h5>
+												<!-- <p class="card-text">₹450</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.7s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-tandoori-veg-paneer-kalimirch-tikka.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Paneer Kalimirch Tikka</h5>
+												<!-- <p class="card-text">₹450</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.8s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-tandoori-veg-paneer-tikka.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Paneer Tikka</h5>
+												<!-- <p class="card-text">₹450</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.9s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-tandoori-veg-seek-kabab.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Veg Seek Kabab</h5>
+												<!-- <p class="card-text">₹280</p> -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Fourth Tab -->
+							<div class="tab-pane fade show" id="fourth" role="tabpanel" aria-labelledby="fourth-tab">
+								<div class="row">
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.2s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-chinese-veg-chilli-garlic-noodles.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Veg Chilli Garlic Noodles</h5>
+												<!-- <p class="card-text">₹290</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.3s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-chinese-veg-chilli-mushroom(dry).jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Chilli Mushroom (Dry)</h5>
+												<!-- <p class="card-text">₹460</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.4s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-chinese-veg-chilli-mushroom(gravy).jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Chilli Mushroom (Gravy)</h5>
+												<!-- <p class="card-text">₹480</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.5s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-chinese-veg-chilli-paneer(dry).jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Chilli Paneer (Dry)</h5>
+												<!-- <p class="card-text">₹380</p> -->
+											</div>
+										</div>
+									</div>
+								</div>
+		
+								<div class="row">
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.6s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-chinese-veg-chilli-paneer(gravy).jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Chilli Paneer (Gravy)</h5>
+												<!-- <p class="card-text">₹400</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.7s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-chinese-veg-hakka-noodles.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Veg Hakka Noodles</h5>
+												<!-- <p class="card-text">₹270</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.8s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-chinese-veg-manchurian(dry).jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Veg Manchurian (Dry)</h5>
+												<!-- <p class="card-text">₹320</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.9s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-chinese-veg-manchurian(gravy).jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Veg Manchurian (Gravy)</h5>
+												<!-- <p class="card-text">₹340</p> -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Fifth Tab -->
+							<div class="tab-pane fade show" id="fifth" role="tabpanel" aria-labelledby="fifth-tab">
+								<div class="row">
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.2s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-indian-veg-dal-fry.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Dal Fry</h5>
+												<!-- <p class="card-text">₹220</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.3s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-indian-veg-dal-makhni.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Dal Makhni</h5>
+												<!-- <p class="card-text">₹250</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.4s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-indian-veg-dal-tadka.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Dal Tadka</h5>
+												<!-- <p class="card-text">₹230</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.5s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-indian-veg-kadhai-chaap.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Kadhai Chaap</h5>
+												<!-- <p class="card-text">₹280</p> -->
+											</div>
+										</div>
+									</div>
+								</div>
+		
+								<div class="row">
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.6s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-indian-veg-kadhai-paneer.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Kadhai Paneer</h5>
+												<!-- <p class="card-text">₹320</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.7s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-indian-veg-palak-paneer.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Palak Paneer</h5>
+												<!-- <p class="card-text">₹280</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.8s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-indian-veg-paneer-butter-masala.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Paneer Butter Masala</h5>
+												<!-- <p class="card-text">₹320</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.9s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-indian-veg-shahi-paneer.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Shahi Paneer</h5>
+												<!-- <p class="card-text">₹300</p> -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		
+							<!-- Sixth Tab -->
+							<div class="tab-pane fade show" id="sixth" role="tabpanel" aria-labelledby="sixth-tab">
+								<div class="row">
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.2s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-tandoori-non-veg-afghani-chicken.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Afghani Chicken</h5>
+												<!-- <p class="card-text">₹350</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.3s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-tandoori-non-veg-chicken-achari-tikka.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Chicken Achari Tikka</h5>
+												<!-- <p class="card-text">₹480</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.4s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-tandoori-non-veg-chicken-malai-tikka.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Chicken Malai Tikka</h5>
+												<!-- <p class="card-text">₹500</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.5s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-tandoori-non-veg-chicken-seekh-kebab.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Chicken Seekh Kebab</h5>
+												<!-- <p class="card-text">₹500</p> -->
+											</div>
+										</div>
+									</div>
+								</div>
+		
+								<div class="row">
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.6s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-tandoori-non-veg-chicken-tikka.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Chicken Tikka</h5>
+												<!-- <p class="card-text">₹450</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.7s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-tandoori-non-veg-chicken.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Tandoori Chicken</h5>
+												<!-- <p class="card-text">₹300/550</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.8s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-tandoori-non-veg-fish-tikka.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Fish Tikka</h5>
+												<!-- <p class="card-text">₹450</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.9s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-tandoori-non-veg-tangdi-kabab.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Tangdi Kabab</h5>
+												<!-- <p class="card-text">₹590</p> -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		
+							<!-- Seventh Tab -->
+							<div class="tab-pane fade show" id="seventh" role="tabpanel" aria-labelledby="seventh-tab">
+								<div class="row">
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.2s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-chinese-non-veg-chicken-garlic.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Chicken Garlic</h5>
+												<!-- <p class="card-text">₹450</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.3s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-chinese-non-veg-chicken-lollipop.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Chicken Lollipop</h5>
+												<!-- <p class="card-text">₹480</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.4s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-chinese-non-veg-chicken-manchurian(dry).jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Chicken Manchurian (Dry)</h5>
+												<!-- <p class="card-text">₹450</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.5s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-chinese-non-veg-chicken-manchurian(gravy).jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Chicken Manchurian (Gravy)</h5>
+												<!-- <p class="card-text">₹480</p> -->
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.6s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-chinese-non-veg-chilli-chicken(dry).jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Chilli Chicken (Dry)</h5>
+												<!-- <p class="card-text">₹450</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.7s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-chinese-non-veg-chilli-chicken(gravy).jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Chilli Chicken (Gravy)</h5>
+												<!-- <p class="card-text">₹480</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.8s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-chinese-non-veg-lemon-coriander-chicken.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Lemon Coriander Chicken</h5>
+												<!-- <p class="card-text">₹470</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.9s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-chinese-non-veg-schezwan-chicken.jpg" the card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Schezwan Chicken</h5>
+												<!-- <p class="card-text">₹470</p> -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Eighth Tab -->
+							<div class="tab-pane fade show" id="eighth" role="tabpanel" aria-labelledby="eighth-tab">
+								<div class="row">
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.2s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-indian-non-veg-butter-chicken.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Butter Chicken</h5>
+												<!-- <p class="card-text">₹350/620</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.3s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-indian-non-veg-chicken-curry.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Chicken Curry</h5>
+												<!-- <p class="card-text">₹350/620</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.4s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-indian-non-veg-chicken-masala.jpg" the card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Chicken Masala</h5>
+												<!-- <p class="card-text">₹370/650</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.5s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-indian-non-veg-chicken-rada.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Chicken Rada</h5>
+												<!-- <p class="card-text">₹360/650</p> -->
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.6s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-indian-non-veg-egg-bhurji.jpg" the card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Egg Bhurji</h5>
+												<!-- <p class="card-text">₹210</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.7s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-indian-non-veg-fish-curry.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Fish Curry</h5>
+												<!-- <p class="card-text">₹550</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.8s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-indian-non-veg-kadhai-chicken.jpg" the card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Kadhai Chicken</h5>
+												<!-- <p class="card-text">₹350/620</p> -->
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-lg-3 mb-3 wow fadeInUp" data-wow-delay="0.9s">
+										<div class="card bg-transparent border-0 hover-zoom">
+											<img src="images/menu-indian-non-veg-mutton-rada.jpg" class="card-img-top" alt="image">
+											<div class="card-body">
+												<h5 class="card-title text-theme">Mutton Rada</h5>
+												<!-- <p class="card-text">₹650</p> -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+
+						<!-- More Menu -->
+						<div class="d-flex justify-content-center">
+							<a href="menu.html" class="btn btn-theme py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">View All Menu</a>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        <hr>
+		<!-- Footer Section -->
+		<footer class="footer bg-dark py-5">
+			<div class="container">
+				<div class="row text-center text-lg-start">
+					<!-- Location and Social Media -->
+					<div class="col-md-4 col-lg-4 mb-4 mb-lg-0">
+						<h5 class="text-uppercase">Location</h5>
+						<div class="d-flex mb-2">
+							<i class="bi bi-geo-alt text-theme me-2"></i>
+							<a class="text-light mb-0" href="https://maps.app.goo.gl/2iEVTy7Ruh6vnn8n8">Near Naturevilla, Laltappar Chowk<br>
+								Highway Road, Dehradun UK-248005
+							</a>
+						</div>
+						<div class="d-flex mb-2">
+							<i class="bi bi-envelope-open text-theme me-2"></i>
+							<a class="text-light mb-0" href="mailto:limelightrestaurants@gmail.com">limelightrestaurants@gmail.com</a>
+						</div>
+						<div class="d-flex mb-2">
+							<i class="bi bi-telephone text-theme me-2"></i>
+							<a class="text-light mb-0" href="tel:+919528830869">+91 9528830869</a>
+						</div>
+						<div class="d-flex mb-2">
+							<i class="bi bi-telephone text-theme me-2"></i>
+							<a class="text-light mb-0" href="tel:+918077857632">+91 8077857632</a>
+						</div>
+
+						<h5 class="text-uppercase mt-4">Follow Us</h5>
+						<div class="d-inline-flex align-items-center">
+							<a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.facebook.com/people/Limelightrestaurant/61562247476638/"><i class="fab fa-facebook-f fw-normal"></i></a>
+							<a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.instagram.com/limelightrestaurant/"><i class="fab fa-instagram fw-normal"></i></a>
+							<a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://x.com/LLRestaurant01"><i class="fab fa-twitter fw-normal"></i></a>
+						</div>
+					</div>
+
+					<!-- Logo -->
+					<div class="col-md-4 col-lg-4 mb-4 mb-lg-0 d-flex justify-content-center align-items-center">
+						<img src="images/logo.png" alt="Limelight Restaurant" class="img-fluid logo-footer">
+					</div>
+
+					<!-- Hours -->
+					<div class="col-md-4 col-lg-4 text-md-center text-lg-center">
+						<h5 class="text-uppercase">Hours</h5>
+						<ul class="list-unstyled">
+							<li>Monday : 08AM – 11PM</li>
+							<li>Tuesday : 08AM – 11PM</li>
+							<li>Wednesday : 08AM – 11PM</li>
+							<li>Thursday : 08AM – 11PM</li>
+							<li>Friday : 08AM – 11PM</li>
+							<li>Saturday : 08AM – 11PM</li>
+							<li>Sunday : 08AM – 11PM</li>
+						</ul>
+					</div>
+				</div>
+				
+				<!-- Copyright -->
+				<div class="text-center mt-4">
+					<p class="mb-0">&copy; <a class="text-white" href="/">Limelight Restaurant</a>. All Rights Reserved. 
+						Designed by <a class="text-white" href="https://jakhmolaweb.co.in/">Jakhmola Web House</a>
+					</p>
+				</div>
+			</div>
+		</footer>
+
+        <!-- jQuery -->
+        <script src="jquery/jquery-3.6.0.min.js"></script>
+
+		<!-- Animation JS -->
+		<script src="lib/wow/wow.min.js"></script>
+
+		<!-- Spinner JS -->
+		<script src="lib/counterup/counterup.min.js"></script>
+
+		<!-- Owl Carousel Slider JS -->
+		<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+		<!-- Light Slider Slider JS -->
+		<script src="lib/lightslider/lightslider.js"></script>
+
+		<!-- Waypoints JS (Required for Owl Carousel and Light Slider to function properly) -->
+		<script src="lib/waypoints/waypoints.min.js"></script>
+
+        <!-- Bootstrap JS -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Custom JS -->
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
