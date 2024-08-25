@@ -742,6 +742,15 @@ a {
             font-size: 0.8rem;
         }
     }
+
+    // Menu Tabs Responsive
+    .nav-tabs {
+        padding-bottom: 0.5rem; // Add some spacing at the bottom
+        .nav-link {
+            padding: 0.3rem 0.5rem; // Further reduce padding for very small screens
+            font-size: 0.7rem; // Further reduce font size if necessary
+        }
+    }
 }
 
 /* Tablets/Ipads Only */

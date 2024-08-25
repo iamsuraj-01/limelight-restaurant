@@ -650,6 +650,13 @@ a {
   .about-page-intro .content p {
     font-size: 0.8rem;
   }
+  .nav-tabs {
+    padding-bottom: 0.5rem;
+  }
+  .nav-tabs .nav-link {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.7rem;
+  }
 }
 /* Tablets/Ipads Only */
 @media (max-width: 767.98px) {
