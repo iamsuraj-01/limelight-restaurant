@@ -650,12 +650,14 @@ a {
   .about-page-intro .content p {
     font-size: 0.8rem;
   }
-  .nav-tabs {
+  .special-menu-tabs {
     padding-bottom: 0.5rem;
+    flex-wrap: nowrap;
   }
-  .nav-tabs .nav-link {
+  .special-menu-tabs .nav-link {
     padding: 0.3rem 0.4rem;
     font-size: 0.9rem;
+    white-space: nowrap;
   }
 }
 /* Tablets/Ipads Only */

@@ -744,11 +744,14 @@ a {
     }
 
     // Menu Tabs Responsive
-    .nav-tabs {
+    .special-menu-tabs {
         padding-bottom: 0.5rem; // Add some spacing at the bottom
+        flex-wrap: nowrap;      // Ensure no wrapping on small screens
+
         .nav-link {
-            padding: 0.3rem 0.4rem; // Further reduce padding for very small screens
-            font-size: 0.9rem; // Further reduce font size if necessary
+            padding: 0.3rem 0.4rem; // Adjust padding for very small screens
+            font-size: 0.9rem;      // Reduce font size for smaller screens
+            white-space: nowrap;    // Ensure text doesn't wrap
         }
     }
 }
