@@ -125,7 +125,7 @@
         });
     });
 
-    // Form Submission
+    // Table Form Submission
     $(document).ready(function() {
         $("#tableForm").on("submit", function(event) {
             event.preventDefault(); // Prevent the default form submission
@@ -141,6 +141,48 @@
             // Create an array for the message lines
             const messageLines = [
                 `Table Booking Request:`,
+                `Name:               ${fullName}`,
+                `Email:              ${email}`,
+                `Phone:              ${phone}`,
+                `Date:               ${date}`,
+                `Time:               ${time}`,
+                `Number of Persons:  ${numPersons}`,
+                `Special Request:    ${specialRequest}`
+            ];
+    
+            // Join the message lines with line breaks
+            const message = messageLines.join('\n');
+    
+            // Detect if the user is on mobile or desktop
+            const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            const whatsappUrl = isMobile 
+                ? `https://wa.me/918791881683?text=${encodeURIComponent(message)}`  // Mobile link
+                : `https://web.whatsapp.com/send?phone=918791881683&text=${encodeURIComponent(message)}`; // WhatsApp Web link
+    
+            // Open WhatsApp link
+            window.open(whatsappUrl, '_blank');
+    
+            // Show Thank You Modal
+            $("#thankYouModal").modal('show');
+        });
+    });
+
+    // Room Form Submission
+    $(document).ready(function() {
+        $("#roomForm").on("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+    
+            const fullName = $("input[name='fullName']").val();
+            const email = $("input[name='email']").val();
+            const phone = $("input[name='phone']").val();
+            const date = $("input[name='date']").val();
+            const time = $("input[name='time']").val();
+            const numPersons = $("input[name='numPersons']").val();
+            const specialRequest = $("textarea[name='specialRequest']").val();
+    
+            // Create an array for the message lines
+            const messageLines = [
+                `Room Booking Request:`,
                 `Name:               ${fullName}`,
                 `Email:              ${email}`,
                 `Phone:              ${phone}`,
