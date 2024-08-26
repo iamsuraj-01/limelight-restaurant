@@ -692,7 +692,7 @@ a {
 @media (max-width: 767.98px) {
   /* Carousel */
   .carousel-item {
-    min-height: 600px;
+    min-height: 250px;
     /* Carousel 
     .carousel-caption {
         left: 50%; // Center horizontally
