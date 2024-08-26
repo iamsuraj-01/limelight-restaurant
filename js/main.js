@@ -121,6 +121,11 @@
             changeMonth: true,
             changeYear: true
         });
+        $('#date2').datepicker({
+            dateFormat: 'mm/dd/yy',
+            changeMonth: true,
+            changeYear: true
+        });
     });
 
     // Time Picker
