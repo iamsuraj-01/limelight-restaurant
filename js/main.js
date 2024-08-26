@@ -127,9 +127,9 @@
 
     // Form Submission
     $(document).ready(function() {
-        $("#reservationForm").on("submit", function(event) {
+        $("#tableForm").on("submit", function(event) {
             event.preventDefault(); // Prevent the default form submission
-
+    
             const fullName = $("input[name='fullName']").val();
             const email = $("input[name='email']").val();
             const phone = $("input[name='phone']").val();
@@ -137,25 +137,37 @@
             const time = $("input[name='time']").val();
             const numPersons = $("input[name='numPersons']").val();
             const specialRequest = $("textarea[name='specialRequest']").val();
-
-            const message = `Reservation Request:%0A
-            Name: ${fullName}%0A
-            Email: ${email}%0A
-            Phone: ${phone}%0A
-            Date: ${date}%0A
-            Time: ${time}%0A
-            Number of Persons: ${numPersons}%0A
-            Special Request: ${specialRequest}`;
-
-            const whatsappUrl = `https://wa.me/916395525749?text=${encodeURIComponent(message)}`;
-
+    
+            // Create an array for the message lines
+            const messageLines = [
+                `Table Booking Request:`,
+                `Name:               ${fullName}`,
+                `Email:              ${email}`,
+                `Phone:              ${phone}`,
+                `Date:               ${date}`,
+                `Time:               ${time}`,
+                `Number of Persons:  ${numPersons}`,
+                `Special Request:    ${specialRequest}`
+            ];
+    
+            // Join the message lines with line breaks
+            const message = messageLines.join('\n');
+    
+            // Detect if the user is on mobile or desktop
+            const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            const whatsappUrl = isMobile 
+                ? `https://wa.me/916395525749?text=${encodeURIComponent(message)}`  // Mobile link
+                : `https://web.whatsapp.com/send?phone=916395525749&text=${encodeURIComponent(message)}`; // WhatsApp Web link
+    
             // Open WhatsApp link
             window.open(whatsappUrl, '_blank');
-
+    
             // Show Thank You Modal
             $("#thankYouModal").modal('show');
         });
     });
+    
+    
     
     
 })(jQuery);
