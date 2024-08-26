@@ -272,7 +272,7 @@ a {
         color: $white !important;  /* Ensure the text color remains white on hover */
         border-color: $theme;
         .card-body {
-            .card-title {
+            .card-title, i {
                 color: $white!important;
             }
         }
@@ -448,7 +448,7 @@ a {
     margin-bottom: 90px;
 }
 
-/* Service */
+/* Menu */
 .menu {
     .nav-tabs .nav-link {
         background: transparent;
@@ -483,7 +483,7 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 500px;
+    min-height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -496,7 +496,7 @@ a {
       right: 0;
       bottom: 0;
       left: 0;
-      background: rgba(0, 0, 0, 0.5); // Dark overlay for better text visibility
+      background: rgba(0, 0, 0, 0.7); // Dark overlay for better text visibility
     }
   
     .container {
@@ -567,6 +567,32 @@ a {
     margin-right: 4px; /* Adds spacing between the stars */
 }
 
+.service {
+    /* Card Styling */
+    .card {
+        text-align: center; /* Center the content */
+    }
+
+    .service-icon {
+        font-size: 3rem; /* Size of the icon */
+        color: $theme; /* Icon color matching the theme */
+        margin-bottom: 1rem;
+    }
+
+    /* Responsive Design */
+    .card-title {
+        font-size: 2rem;
+    }
+  
+    .card-subtitle {
+        font-size: 1.25rem;
+    }
+  
+    .card-text {
+        font-size: 1rem;
+    }
+}
+
 .features {
     /* Responsive Design */
     .card-title {
@@ -584,20 +610,6 @@ a {
   
     .card-text {
       font-size: 1rem;
-    }
-  
-    @media (max-width: 767.98px) {
-      .card-title {
-        font-size: 1.5rem;
-      }
-  
-      .card-subtitle {
-        font-size: 1rem;
-      }
-  
-      .card-text {
-        font-size: 0.875rem;
-      }
     }
 }
 
@@ -848,6 +860,20 @@ a {
         .form-control, .btn {
             padding: 0.75rem 1rem;
             font-size: 0.9rem;
+        }
+    }
+
+    .features {
+        .card-title {
+            font-size: 1.5rem;
+        }
+    
+        .card-subtitle {
+            font-size: 1rem;
+        }
+    
+        .card-text {
+            font-size: 0.875rem;
         }
     }
 }

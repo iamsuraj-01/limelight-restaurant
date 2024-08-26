@@ -251,7 +251,7 @@ a {
   color: #FFFFFF !important; /* Ensure the text color remains white on hover */
   border-color: #ad854d;
 }
-.hover-theme:hover .card-body .card-title {
+.hover-theme:hover .card-body .card-title, .hover-theme:hover .card-body i {
   color: #FFFFFF !important;
 }
 
@@ -400,7 +400,7 @@ a {
   margin-bottom: 90px;
 }
 
-/* Service */
+/* Menu */
 .menu .nav-tabs .nav-link {
   background: transparent;
   color: #FFFFFF;
@@ -431,7 +431,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 500px;
+  min-height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -444,7 +444,7 @@ a {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
 }
 .parallax-section .container {
   position: relative;
@@ -507,6 +507,28 @@ a {
   margin-right: 4px; /* Adds spacing between the stars */
 }
 
+.service {
+  /* Card Styling */
+  /* Responsive Design */
+}
+.service .card {
+  text-align: center; /* Center the content */
+}
+.service .service-icon {
+  font-size: 3rem; /* Size of the icon */
+  color: #ad854d; /* Icon color matching the theme */
+  margin-bottom: 1rem;
+}
+.service .card-title {
+  font-size: 2rem;
+}
+.service .card-subtitle {
+  font-size: 1.25rem;
+}
+.service .card-text {
+  font-size: 1rem;
+}
+
 .features {
   /* Responsive Design */
   /* Responsive Design */
@@ -522,17 +544,6 @@ a {
 }
 .features .card-text {
   font-size: 1rem;
-}
-@media (max-width: 767.98px) {
-  .features .card-title {
-    font-size: 1.5rem;
-  }
-  .features .card-subtitle {
-    font-size: 1rem;
-  }
-  .features .card-text {
-    font-size: 0.875rem;
-  }
 }
 
 /* About Us Page */
@@ -731,6 +742,15 @@ a {
   .online-form .form-control, .online-form .btn {
     padding: 0.75rem 1rem;
     font-size: 0.9rem;
+  }
+  .features .card-title {
+    font-size: 1.5rem;
+  }
+  .features .card-subtitle {
+    font-size: 1rem;
+  }
+  .features .card-text {
+    font-size: 0.875rem;
   }
 }
 /* Desktop Only */
