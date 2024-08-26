@@ -603,15 +603,32 @@ a {
 }
 
 /* Book table Page */
-/* Reservation Section */
-.form-section h2 {
-  font-size: 2.8rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
+/* Contact Page Section */
+.contact-info .contact-item h5 {
+  color: #333;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
-.form-section p {
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
+.contact-info .contact-item h5::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: #ad854d;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.contact-info .contact-item p {
+  font-size: 1rem;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.contact-info .contact-item p i {
+  color: #ad854d;
+  margin-right: 10px;
 }
 
 .online-form .form-control {
@@ -710,9 +727,6 @@ a {
   }
   .book-table .row.g-3 .col-12 {
     margin-top: 15px;
-  }
-  .form-section {
-    padding: 2rem 1rem;
   }
   .online-form .form-control, .online-form .btn {
     padding: 0.75rem 1rem;
