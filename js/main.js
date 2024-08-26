@@ -123,6 +123,7 @@
         });
     });
 
+    // Time Picker
     document.addEventListener('DOMContentLoaded', function() {
         // Initialize Flatpickr as a time picker
         flatpickr("#timepicker", {
@@ -188,7 +189,8 @@
             const fullName = $("input[name='fullName']").val();
             const email = $("input[name='email']").val();
             const phone = $("input[name='phone']").val();
-            const date = $("input[name='date']").val();
+            const date1 = $("input[name='date1']").val();
+            const date2 = $("input[name='date2']").val();
             const time = $("input[name='time']").val();
             const numPersons = $("input[name='numPersons']").val();
             const specialRequest = $("textarea[name='specialRequest']").val();
@@ -199,7 +201,8 @@
                 `Name:               ${fullName}`,
                 `Email:              ${email}`,
                 `Phone:              ${phone}`,
-                `Date:               ${date}`,
+                `Date Of Arrival:    ${date1}`,
+                `Date Of Departure:  ${date2}`,
                 `Time:               ${time}`,
                 `Number of Persons:  ${numPersons}`,
                 `Special Request:    ${specialRequest}`
