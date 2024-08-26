@@ -156,8 +156,8 @@
             // Detect if the user is on mobile or desktop
             const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
             const whatsappUrl = isMobile 
-                ? `https://wa.me/916395525749?text=${encodeURIComponent(message)}`  // Mobile link
-                : `https://web.whatsapp.com/send?phone=916395525749&text=${encodeURIComponent(message)}`; // WhatsApp Web link
+                ? `https://wa.me/918791881683?text=${encodeURIComponent(message)}`  // Mobile link
+                : `https://web.whatsapp.com/send?phone=918791881683&text=${encodeURIComponent(message)}`; // WhatsApp Web link
     
             // Open WhatsApp link
             window.open(whatsappUrl, '_blank');
