@@ -124,6 +124,38 @@
             theme: "bootstrap5"    // Optional Bootstrap 5 theme
         });
     });
+
+    // Form Submission
+    $(document).ready(function() {
+        $("#reservationForm").on("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            const fullName = $("input[name='fullName']").val();
+            const email = $("input[name='email']").val();
+            const phone = $("input[name='phone']").val();
+            const date = $("input[name='date']").val();
+            const time = $("input[name='time']").val();
+            const numPersons = $("input[name='numPersons']").val();
+            const specialRequest = $("textarea[name='specialRequest']").val();
+
+            const message = `Reservation Request:%0A
+            Name: ${fullName}%0A
+            Email: ${email}%0A
+            Phone: ${phone}%0A
+            Date: ${date}%0A
+            Time: ${time}%0A
+            Number of Persons: ${numPersons}%0A
+            Special Request: ${specialRequest}`;
+
+            const whatsappUrl = `https://wa.me/916395525749?text=${encodeURIComponent(message)}`;
+
+            // Open WhatsApp link
+            window.open(whatsappUrl, '_blank');
+
+            // Show Thank You Modal
+            $("#thankYouModal").modal('show');
+        });
+    });
     
     
 })(jQuery);
