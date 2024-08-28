@@ -231,23 +231,6 @@
     });
     
     // Services Whatsapp
-    // Book Now Button Click Handler for the first service
-    $("#firstService").on("click", function(event) {
-        event.preventDefault(); // Prevent the default link behavior
-
-        // Define a message for the Book Now button
-        const message = "Hello, I am interested in your catering service.";
-
-        // Detect if the user is on mobile or desktop
-        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-        const whatsappUrl = isMobile 
-            ? `https://wa.me/8791881683?text=${encodeURIComponent(message)}`  // Mobile link
-            : `https://web.whatsapp.com/send?phone=8791881683&text=${encodeURIComponent(message)}`; // WhatsApp Web link
-
-        // Open WhatsApp link
-        window.open(whatsappUrl, '_blank');
-    });
-
     // Book Now Button Click Handler for the second service
     $("#secondService").on("click", function(event) {
         event.preventDefault(); // Prevent the default link behavior
