@@ -356,7 +356,7 @@ a {
 /* Carousel */
 .carousel-item {
   position: relative;
-  min-height: 700px;
+  min-height: 1100px;
   /* Carousel 
   .carousel-caption {
       position: absolute;
