@@ -334,7 +334,7 @@ a {
   color: #ad854d;
 }
 .footer .logo-footer {
-  max-width: 300px;
+  max-width: 250px;
   height: auto;
 }
 .footer ul {
@@ -529,7 +529,7 @@ a {
 .service .service-item img {
   border-radius: 8px;
   max-width: 100%;
-  height: 280px;
+  height: 220px;
 }
 .service .service-item .service-title {
   font-size: 1.7rem;
@@ -567,7 +567,7 @@ a {
 .features .features-item img {
   border-radius: 8px;
   max-width: 100%;
-  height: 230px;
+  height: 220px;
 }
 .features .features-item .features-title {
   font-size: 1.7rem;
@@ -733,6 +733,16 @@ a {
     padding: 0.3rem 0.4rem;
     font-size: 0.9rem;
     white-space: nowrap;
+  }
+  .service .service-item img {
+    height: 280px;
+  }
+  .features .features-item img {
+    height: 280px;
+  }
+  footer .responsive-footer-section {
+    flex-direction: column;
+    align-items: center;
   }
 }
 /* Tablets/Ipads Only */
