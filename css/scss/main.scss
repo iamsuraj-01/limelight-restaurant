@@ -591,7 +591,7 @@ a {
         img {
             border-radius: 8px;
             max-width: 100%;
-            height: auto;
+            height: 280px;
         }
 
         .service-title {
@@ -608,38 +608,64 @@ a {
             text-align: center;
             padding: 5px;
         }
+    }
+}
 
-        .btn-primary {
-            background-color: #007bff;
-            border-color: #007bff;
-            &:hover {
-                background-color: #0056b3;
-                border-color: #0056b3;
-            }
+.features {
+    padding: 60px 0;
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .features-item {
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+
+        img {
+            border-radius: 8px;
+            max-width: 100%;
+            height: 230px;
+        }
+
+        .features-title {
+            font-size: 1.7rem;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            color: $theme;
+        }
+
+        .features-description {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            color: #666666;
+            text-align: center;
+            padding: 5px;
         }
     }
 }
 
-
-
-
-.features {
-    /* Responsive Design */
-    .card-title {
-    font-size: 2rem;
+.about {
+    p {
+        font-size: 17px;
     }
-  
-    /* Responsive Design */
-    .card-title {
-      font-size: 2rem;
-    }
-  
-    .card-subtitle {
-      font-size: 1.25rem;
-    }
-  
-    .card-text {
-      font-size: 1rem;
+}
+
+.staff {
+    p {
+        font-size: 1.5rem;
+        padding: 30px;
+        text-align: justify;
     }
 }
 
@@ -652,7 +678,7 @@ a {
             margin-bottom: 1rem;
         }
         p {
-            font-size: 1rem;
+            font-size: 1.1rem;
             margin-bottom: 1rem;
         }
     }
