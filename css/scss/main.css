@@ -660,7 +660,7 @@ a {
   margin-top: 15px;
 }
 
-/* Book table Page */
+/* Reservation Page */
 /* Reservation Icons */
 .overlay-icons {
   background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black background */
@@ -671,6 +671,19 @@ a {
 }
 .overlay-icons p {
   font-size: 14px;
+}
+
+/* Reservation Slider */
+.custom-carousel {
+  height: 100%;
+  max-height: 775px;
+  overflow: hidden;
+}
+.custom-carousel img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* Contact Page Section */

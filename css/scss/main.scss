@@ -754,7 +754,7 @@ a {
     }
 }
 
-/* Book table Page */
+/* Reservation Page */
 /* Reservation Icons */
 .overlay-icons {
     background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black background */
@@ -765,6 +765,18 @@ a {
 
     p {
         font-size: 14px;
+    }
+}
+/* Reservation Slider */
+.custom-carousel {
+    height: 100%; // Make the carousel take up the full height of its container
+    max-height: 775px; // Set a maximum height to ensure the carousel isn't too tall
+    overflow: hidden; // Hide overflow to maintain visual consistency
+  
+    img {
+      height: 100%; // Make the image take up the full height of the carousel
+      width: 100%; // Ensure the width is 100%
+      object-fit: cover; // Keep the image aspect ratio while covering the entire area
     }
 }
 
@@ -1032,5 +1044,5 @@ a {
         padding: 30px 0;
     }
 }
-
-
+  
+  
