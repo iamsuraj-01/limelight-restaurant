@@ -645,20 +645,42 @@ a {
   background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black background */
   border-left: 2px solid #ad854d;
   border-right: 2px solid #ad854d;
-  padding: 10px 0; /* Add some vertical padding */
+  padding: 16px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add a slight shadow to the text for better readability */
 }
 .overlay-icons p {
   font-size: 14px;
 }
 
+.overlay-icons-2 {
+  background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black background */
+  border-left: 2px solid #ad854d;
+  border-right: 2px solid #ad854d;
+  padding: 16px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add a slight shadow to the text for better readability */
+}
+.overlay-icons-2 p {
+  font-size: 14px;
+}
+
 /* Reservation Slider */
 .custom-carousel {
-  max-height: 775px;
+  max-height: 593px;
   overflow: hidden;
 }
 .custom-carousel img {
-  height: auto;
+  max-height: 593px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.custom-carousel-2 {
+  max-height: 681px;
+  overflow: hidden;
+}
+.custom-carousel-2 img {
+  max-height: 681px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -748,10 +770,22 @@ a {
     align-items: center;
   }
   /* Reservation Icons */
+  .overlay-icons {
+    bottom: -90px !important;
+  }
   .overlay-icons i {
     font-size: 18px !important;
   }
   .overlay-icons p {
+    font-size: 10px;
+  }
+  .overlay-icons-2 {
+    bottom: -76px !important;
+  }
+  .overlay-icons-2 i {
+    font-size: 18px !important;
+  }
+  .overlay-icons-2 p {
     font-size: 10px;
   }
 }
