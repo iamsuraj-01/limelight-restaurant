@@ -119,36 +119,68 @@
 
         <section class="form-section py-5 wow fadeInUp" data-wow-delay="0.1s">
 			<div class="container">
-				<div class="text-center mb-5">
-					<h2 class="fw-bold text-white text-uppercase">Online <span class="text-theme">Reservation</span></h2>
-					<p class="text-white">Book your table now to enjoy a personalized dining experience at Limelight Restaurant</p>
-				</div>
-		
 				<form id="tableForm" class="online-form">
-					<div class="row">
-						<div class="col-lg-4 mb-3">
-							<input type="text" class="form-control" name="fullName" placeholder="FULL NAME" required>
+					<div class="row g-0">
+						<!-- Image Column -->
+						<div class="col-lg-7 position-relative">
+							<img src="images/gallery-4.JPG" alt="Reservation Image" class="img-fluid h-100 w-100 object-fit-cover">
+							<div class="overlay-icons position-absolute w-100 bottom-0 p-3 d-flex justify-content-around bg-opacity-50 text-white">
+								<div class="text-center">
+									<i class="bi bi-brightness-high" style="font-size: 1.7rem;"></i>
+									<p class="mb-0">Outdoor Seating</p>
+								</div>
+								<div class="text-center">
+									<i class="bi bi-person-check" style="font-size: 1.7rem;"></i>
+									<p class="mb-0">Online Reservation</p>
+								</div>
+								<div class="text-center">
+									<i class="bi bi-emoji-smile" style="font-size: 1.7rem;"></i>
+									<p class="mb-0">Family Friendly</p>
+								</div>
+								<div class="text-center">
+									<i class="bi bi-book-half" style="font-size: 1.7rem;"></i>
+									<p class="mb-0">Special Menu</p>
+								</div>
+								<div class="text-center">
+									<i class="bi bi-cup-straw" style="font-size: 1.7rem;"></i>
+									<p class="mb-0">Drinks Available</p>
+								</div>
+							</div>
+							
 						</div>
-						<div class="col-lg-4 mb-3">
-							<input type="email" class="form-control" name="email" placeholder="EMAIL" required>
-						</div>
-						<div class="col-lg-4 mb-3">
-							<input type="tel" class="form-control" name="phone" placeholder="PHONE" required>
-						</div>
-						<div class="col-lg-6 mb-3">
-							<input type="text" class="form-control" id="date" name="date" placeholder="DATE" required>
-						</div>
-						<div class="col-lg-6 mb-3">
-							<input type="text" class="form-control" id="timepicker" name="time" placeholder="TIME" required>
-						</div>
-						<div class="col-lg-12 mb-3">
-							<input type="number" class="form-control" name="numPersons" placeholder="NUMBER OF PERSON" min="1" max="50" required>
-						</div>
-						<div class="col-lg-12 mb-5">
-							<textarea class="form-control" name="specialRequest" rows="4" placeholder="SPECIAL REQUEST"></textarea>
-						</div>
-						<div class="col-lg-12 text-center">
-							<button type="submit" class="btn btn-theme btn-lg text-white px-4 py-2">Book Table</button>
+					
+						<!-- Form Column -->
+						<div class="col-lg-5 d-flex align-items-center bg-secondary-theme">
+							<div class="p-5 w-100">
+								<h3 class="text-light text-uppercase mb-4"><span class="text-theme fw-bold">Reservation</span></h3>
+								<h2 class="text-white text-uppercase fw-bold mb-4">Book A Table Online</h2>
+								<div class="row g-3">
+									<div class="col-lg-6 mb-3">
+										<input type="text" class="form-control" name="fullName" placeholder="FULL NAME" required>
+									</div>
+									<div class="col-lg-6 mb-3">
+										<input type="email" class="form-control" name="email" placeholder="EMAIL" required>
+									</div>
+									<div class="col-lg-6 mb-3">
+										<input type="tel" class="form-control" name="phone" placeholder="PHONE" required>
+									</div>
+									<div class="col-lg-6 mb-3">
+										<input type="text" class="form-control" id="date" name="date" placeholder="DATE" required>
+									</div>
+									<div class="col-lg-6 mb-3">
+										<input type="text" class="form-control" id="timepicker" name="time" placeholder="TIME" required>
+									</div>
+									<div class="col-lg-6 mb-3">
+										<input type="number" class="form-control" name="numPersons" placeholder="NUMBER OF PERSON" min="1" max="50" required>
+									</div>
+									<div class="col-lg-12 mb-3">
+										<textarea class="form-control" name="specialRequest" rows="4" placeholder="SPECIAL REQUEST"></textarea>
+									</div>
+									<div class="col-lg-12 text-center">
+										<button type="submit" class="btn btn-theme btn-lg w-100 text-white px-4 py-2">Book Table</button>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</form>
@@ -177,63 +209,96 @@
 			<div class="container">
 				<div class="row text-center text-lg-start">
 					<!-- Location and Social Media -->
-					<div class="col-md-4 col-lg-4 mb-4 mb-lg-0">
-						<h5 class="text-uppercase">Location</h5>
-						<div class="d-flex mb-2">
+					<div class="col-md-3 col-lg-3 mb-4 mb-lg-0">
+						<h5 class="text-uppercase text-light">Get In Touch</h5>
+						<div class="d-flex responsive-footer-section mb-2">
 							<i class="bi bi-geo-alt text-theme me-2"></i>
-							<a class="text-light mb-0" href="https://maps.app.goo.gl/2iEVTy7Ruh6vnn8n8">Near Naturevilla, Laltappar Chowk<br>
+							<a class="text-light mb-0" href="https://maps.app.goo.gl/2iEVTy7Ruh6vnn8n8" target="_blank">
+								Near Naturevilla, Laltappar Chowk<br>
 								Highway Road, Dehradun UK-248005
 							</a>
 						</div>
-						<div class="d-flex mb-2">
+						<div class="d-flex responsive-footer-section mb-2">
 							<i class="bi bi-envelope-open text-theme me-2"></i>
 							<a class="text-light mb-0" href="mailto:limelightrestaurants@gmail.com">limelightrestaurants@gmail.com</a>
 						</div>
-						<div class="d-flex mb-2">
+						<div class="d-flex responsive-footer-section mb-2">
 							<i class="bi bi-telephone text-theme me-2"></i>
 							<a class="text-light mb-0" href="tel:+919528830869">+91 9528830869</a>
 						</div>
-						<div class="d-flex mb-2">
+						<div class="d-flex responsive-footer-section mb-2">
 							<i class="bi bi-telephone text-theme me-2"></i>
 							<a class="text-light mb-0" href="tel:+918077857632">+91 8077857632</a>
 						</div>
-
-						<h5 class="text-uppercase mt-4">Follow Us</h5>
+		
+						<h5 class="text-uppercase mt-4 text-light">Follow Us</h5>
 						<div class="d-inline-flex align-items-center">
-							<a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.facebook.com/people/Limelightrestaurant/61562247476638/"><i class="fab fa-facebook-f fw-normal"></i></a>
-							<a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.instagram.com/limelightrestaurant/"><i class="fab fa-instagram fw-normal"></i></a>
-							<a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://x.com/LLRestaurant01"><i class="fab fa-twitter fw-normal"></i></a>
+							<a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.facebook.com/people/Limelightrestaurant/61562247476638/" target="_blank">
+								<i class="fab fa-facebook-f fw-normal"></i>
+							</a>
+							<a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.instagram.com/limelightrestaurant/" target="_blank">
+								<i class="fab fa-instagram fw-normal"></i>
+							</a>
+							<a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://x.com/LLRestaurant01" target="_blank">
+								<i class="fab fa-twitter fw-normal"></i>
+							</a>
 						</div>
 					</div>
-
+		
+					<!-- Guest Services -->
+					<div class="col-md-2 col-lg-2 text-md-center text-lg-center">
+						<h5 class="text-uppercase text-light">Guest Services</h5>
+						<ul class="list-unstyled text-light">
+							<li>Catering Service</li>
+							<li>Room Service</li>
+							<li>Event Planning</li>
+							<li>Special Requests</li>
+							<li>Online Booking</li>
+							<li>Contact Us</li>
+						</ul>
+					</div>
+		
 					<!-- Logo -->
-					<div class="col-md-4 col-lg-4 mb-4 mb-lg-0 d-flex justify-content-center align-items-center">
+					<div class="col-md-2 col-lg-2 mb-4 mb-lg-0">
 						<img src="images/logo.png" alt="Limelight Restaurant" class="img-fluid logo-footer">
 					</div>
-
+		
+					<!-- Events -->
+					<div class="col-md-2 col-lg-2 text-md-center text-lg-center">
+						<h5 class="text-uppercase text-light">Events</h5>
+						<ul class="list-unstyled text-light">
+							<li>Ring Ceremony</li>
+							<li>Anniversary</li>
+							<li>Birthday Party</li>
+							<li>Pool Party</li>
+							<li>Lawn Party</li>
+							<li>Business Meeting</li>
+						</ul>
+					</div>
+		
 					<!-- Hours -->
-					<div class="col-md-4 col-lg-4 text-md-center text-lg-center">
-						<h5 class="text-uppercase">Hours</h5>
-						<ul class="list-unstyled">
-							<li>Monday : 10:30AM – 11PM</li>
-							<li>Tuesday : 10:30AM – 11PM</li>
-							<li>Wednesday : 10:30AM – 11PM</li>
-							<li>Thursday : 10:30AM – 11PM</li>
-							<li>Friday : 10:30AM – 11PM</li>
-							<li>Saturday : 10:30AM – 11PM</li>
-							<li>Sunday : 10:30AM – 11PM</li>
+					<div class="col-md-3 col-lg-3 text-md-center text-lg-center">
+						<h5 class="text-uppercase text-light">Hours</h5>
+						<ul class="list-unstyled text-light">
+							<li>Monday: 10:30 AM – 11:00 PM</li>
+							<li>Tuesday: 10:30 AM – 11:00 PM</li>
+							<li>Wednesday: 10:30 AM – 11:00 PM</li>
+							<li>Thursday: 10:30 AM – 11:00 PM</li>
+							<li>Friday: 10:30 AM – 11:00 PM</li>
+							<li>Saturday: 10:30 AM – 11:00 PM</li>
+							<li>Sunday: 10:30 AM – 11:00 PM</li>
 						</ul>
 					</div>
 				</div>
-				
+		
 				<!-- Copyright -->
 				<div class="text-center mt-4">
-					<p class="mb-0">&copy; <a class="text-white" href="/">Limelight Restaurant</a>. All Rights Reserved. 
-						Designed by <a class="text-white" href="https://jakhmolaweb.co.in/">Jakhmola Web House</a>
+					<p class="mb-0 text-light">&copy; <a class="text-white" href="/">Limelight Restaurant</a>. All Rights Reserved. 
+						Designed by <a class="text-white" href="https://jakhmolaweb.co.in/" target="_blank">Jakhmola Web House</a>
 					</p>
 				</div>
 			</div>
-		</footer>
+		</footer>	
 
         <!-- jQuery -->
         <script src="jquery/jquery-3.6.0.min.js"></script>

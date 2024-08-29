@@ -755,6 +755,18 @@ a {
 }
 
 /* Book table Page */
+/* Reservation Icons */
+.overlay-icons {
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black background */
+    border-left: 2px solid $theme;
+    border-right: 2px solid $theme;
+    padding: 10px 0; /* Add some vertical padding */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add a slight shadow to the text for better readability */
+
+    p {
+        font-size: 14px;
+    }
+}
 
 /* Contact Page Section */
 .contact-info {
@@ -817,7 +829,7 @@ a {
     .navbar {
          /* Navbar Brand */
         .navbar-brand img {
-            width: 130px;
+            width: 100px;
             max-width: 100%;
             height: auto;
         }
@@ -864,6 +876,16 @@ a {
         .responsive-footer-section {
             flex-direction: column;
             align-items: center;
+        }
+    }
+
+    /* Reservation Icons */
+    .overlay-icons {
+        i {
+            font-size: 18px!important;
+        }
+        p {
+            font-size: 8px;
         }
     }
 }
@@ -1010,3 +1032,5 @@ a {
         padding: 30px 0;
     }
 }
+
+
