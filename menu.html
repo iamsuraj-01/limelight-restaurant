@@ -76,33 +76,50 @@
 		<header class="container-fluid position-relative p-0">
 			<!-- Navbar Section -->
 			<nav class="navbar navbar-expand-lg navbar-dark px-4 py-3 py-lg-0">
-				<a href="/" class="navbar-brand p-0">
-					<img src='images/logo.png' alt="Logo" rel="preload" class="navbar-brand-image" />
+				<!-- Mobile Logo -->
+				<a class="navbar-brand d-lg-none" href="/">
+					<img src='images/logo.png' alt="Logo" class="img-fluid" />
 				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
 					<span class="fa fa-bars"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="navbarCollapse">
-					<div class="navbar-nav mx-auto py-0">
-						<a href="/" class="nav-item nav-link active">Home</a>
-						<a href="about.html" class="nav-item nav-link">About</a>
-						<a href="menu.html" class="nav-item nav-link">Menu</a>
-						<a href="service.html" class="nav-item nav-link">Services</a>
-						<a href="contact.html" class="nav-item nav-link">Contact</a>
-						<div class="nav-item dropdown">
+				<div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+					<ul class="navbar-nav mx-auto py-0 gap-lg-5">
+						<li class="nav-item me-lg-auto">
+							<a href="/" class="nav-link active">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="about.html" class="nav-link">About</a>
+						</li>
+						<li class="nav-item">
+							<a href="menu.html" class="nav-link me-5">Menu</a>
+						</li>
+						<!-- Desktop Logo -->
+						<li class="nav-item d-none d-lg-block">
+							<a class="navbar-brand" href="/">
+								<img src='images/logo.png' alt="Logo" class="img-fluid" />
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="service.html" class="nav-link">Services</a>
+						</li>
+						<li class="nav-item me-lg-auto">
+							<a href="contact.html" class="nav-link">Contact</a>
+						</li>
+						<li class="nav-item dropdown">
 							<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Book Now</a>
 							<div class="dropdown-menu m-0">
 								<a href="book-table.html" class="dropdown-item">Book Table</a>
 								<a href="book-room.html" class="dropdown-item">Book Room</a>
 							</div>
-						</div>
-					</div>
+						</li>
+					</ul>
 				</div>
 			</nav>
 		</header>
 
         <!-- Banner Section -->
-		<div class="container-fluid bg-theme py-5 banner" style="background: linear-gradient(rgba(9, 30, 62, 0.6), rgba(9, 30, 62, 0.6)), url('images/carousel-6.jpg') center center no-repeat;">
+		<div class="container-fluid bg-theme py-5 banner" style="background: linear-gradient(rgba(9, 30, 62, 0.6), rgba(9, 30, 62, 0.6)), url('images/menu-banner.jpg') center center no-repeat;">
 			<div class="row py-5">
 				<div class="col-12 pt-lg-5 mt-lg-5 text-center">
 					<h1 class="display-4 text-white animated zoomIn">Menu</h1>

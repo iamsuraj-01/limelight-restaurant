@@ -83,24 +83,36 @@
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
 					<span class="fa fa-bars"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="navbarCollapse">
-					<ul class="navbar-nav mx-auto py-0">
-						<a href="/" class="nav-item nav-link active">Home</a>
-						<a href="about.html" class="nav-item nav-link">About</a>
-						<a href="menu.html" class="nav-item nav-link me-5">Menu</a>
+				<div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+					<ul class="navbar-nav mx-auto py-0 gap-lg-5">
+						<li class="nav-item me-lg-auto">
+							<a href="/" class="nav-link active">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="about.html" class="nav-link">About</a>
+						</li>
+						<li class="nav-item">
+							<a href="menu.html" class="nav-link me-5">Menu</a>
+						</li>
 						<!-- Desktop Logo -->
-						<a class="navbar-brand d-none d-lg-block" href="/">
-							<img src='images/logo.png' alt="Logo" class="img-fluid" />
-						</a>
-						<a href="service.html" class="nav-item nav-link">Services</a>
-						<a href="contact.html" class="nav-item nav-link">Contact</a>
-						<div class="nav-item dropdown">
+						<li class="nav-item d-none d-lg-block">
+							<a class="navbar-brand" href="/">
+								<img src='images/logo.png' alt="Logo" class="img-fluid" />
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="service.html" class="nav-link">Services</a>
+						</li>
+						<li class="nav-item me-lg-auto">
+							<a href="contact.html" class="nav-link">Contact</a>
+						</li>
+						<li class="nav-item dropdown">
 							<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Book Now</a>
 							<div class="dropdown-menu m-0">
 								<a href="book-table.html" class="dropdown-item">Book Table</a>
 								<a href="book-room.html" class="dropdown-item">Book Room</a>
 							</div>
-						</div>
+						</li>
 					</ul>
 				</div>
 			</nav>
