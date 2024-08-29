@@ -413,28 +413,6 @@ a {
       height: 100%;
       object-fit: cover;
     }
-    
-    /* Carousel 
-    .carousel-caption {
-        position: absolute;
-        bottom: 0; // Anchoring it at the bottom
-        left: 50%; // Centering it horizontally
-        transform: translateX(-50%); // Adjust horizontally to truly center
-        width: 50%; // Ensure it spans the full width if neede
-        z-index: 10;
-        color: #fff;
-        background-color: rgba(0, 0, 0, 0.5);
-        padding: 20px;
-    
-        h5 {
-            font-size: 3.9rem;
-        }
-    
-        p {
-            font-size: 1rem;
-        }
-    }
-    */
 }
   
 /* Hide Carousel Controls */
@@ -769,12 +747,11 @@ a {
 }
 /* Reservation Slider */
 .custom-carousel {
-    height: 100%; // Make the carousel take up the full height of its container
     max-height: 775px; // Set a maximum height to ensure the carousel isn't too tall
     overflow: hidden; // Hide overflow to maintain visual consistency
   
     img {
-      height: 100%; // Make the image take up the full height of the carousel
+      height: auto; // Make the image take up the full height of the carousel
       width: 100%; // Ensure the width is 100%
       object-fit: cover; // Keep the image aspect ratio while covering the entire area
     }
@@ -911,24 +888,6 @@ a {
     /* Carousel */
     .carousel-item {
         min-height: 250px;
-        
-        /* Carousel 
-        .carousel-caption {
-            left: 50%; // Center horizontally
-            bottom: 0%; // Position at the very bottom
-            transform: translateX(-50%); // Shift it back to center it horizontally
-            padding: 15px; // Consistent padding
-            width: 100%; // Ensure it spans the full width if needed
-    
-          h5 {
-            font-size: 2.3rem;
-          }
-    
-          p {
-            font-size: 1rem;
-          }
-        }
-        */
     }
       
     /* Footer */
@@ -1020,7 +979,7 @@ a {
 }
 
 @media (min-width: 992px) {
-    /* Navbar */
+    /* Navbar - Uncomment this code if you want the carousel to be positioned starting the navbar
     .navbar {
         position: absolute;
         width: 100%;
@@ -1029,6 +988,7 @@ a {
         border-bottom: 1px solid rgba(256, 256, 256, .1);
         z-index: 999;
     }
+    */
 
    /* Gallery */
     .gallery {

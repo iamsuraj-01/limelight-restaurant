@@ -357,27 +357,6 @@ a {
 .carousel-item {
   position: relative;
   min-height: 1100px;
-  /* Carousel 
-  .carousel-caption {
-      position: absolute;
-      bottom: 0; // Anchoring it at the bottom
-      left: 50%; // Centering it horizontally
-      transform: translateX(-50%); // Adjust horizontally to truly center
-      width: 50%; // Ensure it spans the full width if neede
-      z-index: 10;
-      color: #fff;
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 20px;
-
-      h5 {
-          font-size: 3.9rem;
-      }
-
-      p {
-          font-size: 1rem;
-      }
-  }
-  */
 }
 .carousel-item img {
   position: absolute;
@@ -675,12 +654,11 @@ a {
 
 /* Reservation Slider */
 .custom-carousel {
-  height: 100%;
   max-height: 775px;
   overflow: hidden;
 }
 .custom-carousel img {
-  height: 100%;
+  height: auto;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -782,23 +760,6 @@ a {
   /* Carousel */
   .carousel-item {
     min-height: 250px;
-    /* Carousel 
-    .carousel-caption {
-        left: 50%; // Center horizontally
-        bottom: 0%; // Position at the very bottom
-        transform: translateX(-50%); // Shift it back to center it horizontally
-        padding: 15px; // Consistent padding
-        width: 100%; // Ensure it spans the full width if needed
-
-      h5 {
-        font-size: 2.3rem;
-      }
-
-      p {
-        font-size: 1rem;
-      }
-    }
-    */
   }
   /* Footer */
   .footer-nav {
@@ -860,15 +821,16 @@ a {
   }
 }
 @media (min-width: 992px) {
-  /* Navbar */
+  /* Navbar - Uncomment this code if you want the carousel to be positioned starting the navbar
   .navbar {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    z-index: 999;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      border-bottom: 1px solid rgba(256, 256, 256, .1);
+      z-index: 999;
   }
+  */
   /* Gallery */
   .gallery .box {
     margin: -15px;
